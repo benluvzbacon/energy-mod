@@ -203,12 +203,8 @@ duplicate input class mezz/jei/api/IModPlugin, from /home/runner/.gradle/caches/
 :remapping 2 mods from modLocalRuntime (java-runtime)
 
 > Task :compileJava
-/home/runner/work/energy-mod/energy-mod/src/main/java/com/benluvzbacon/ironworks/jei/MachineRecipeCategory.java:40: warning: [removal] getBackground() in IRecipeCategory has been deprecated and marked for removal
-    public IDrawable getBackground() {
-                     ^
 Note: /home/runner/work/energy-mod/energy-mod/src/main/java/com/benluvzbacon/ironworks/registry/ModBlockEntities.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
-1 warning
 
 > Task :processResources
 > Task :classes
@@ -225,11 +221,11 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :assemble
 > Task :build
 
-BUILD SUCCESSFUL in 1m 10s
+BUILD SUCCESSFUL in 1m 4s
 5 actionable tasks: 5 executed
 LIBS DIRECTORY:
-total 296K
--rw-r--r-- 1 runner runner 293K Sep  7 22:29 ironworks-steam-age-1.0.0.jar
+total 268K
+-rw-r--r-- 1 runner runner 265K Sep  7 15:45 ironworks-steam-age-1.0.0.jar
 JAR CONTENTS:
 Archive:  build/libs/ironworks-steam-age-1.0.0.jar
   Length      Date    Time    Name
@@ -251,6 +247,8 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       856  1980-01-01 00:00   assets/ironworks/blockstates/bronze_rock_breaker.json
        88  1980-01-01 00:00   assets/ironworks/blockstates/coal_coke_block.json
       764  1980-01-01 00:00   assets/ironworks/blockstates/coke_oven.json
+       85  1980-01-01 00:00   assets/ironworks/blockstates/copper_block.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/copper_ore.json
        91  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_lead_ore.json
        93  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_nickel_ore.json
        93  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_silver_ore.json
@@ -281,7 +279,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
        81  1980-01-01 00:00   assets/ironworks/blockstates/zinc_ore.json
       191  1980-01-01 00:00   assets/ironworks/icon.png
         0  1980-01-01 00:00   assets/ironworks/lang/
-     6630  1980-01-01 00:00   assets/ironworks/lang/en_us.json
+     6880  1980-01-01 00:00   assets/ironworks/lang/en_us.json
         0  1980-01-01 00:00   assets/ironworks/models/
         0  1980-01-01 00:00   assets/ironworks/models/block/
       104  1980-01-01 00:00   assets/ironworks/models/block/brass_block.json
@@ -303,6 +301,8 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       225  1980-01-01 00:00   assets/ironworks/models/block/bronze_rock_breaker_on.json
       108  1980-01-01 00:00   assets/ironworks/models/block/coal_coke_block.json
       103  1980-01-01 00:00   assets/ironworks/models/block/coke_oven.json
+      105  1980-01-01 00:00   assets/ironworks/models/block/copper_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/copper_ore.json
       111  1980-01-01 00:00   assets/ironworks/models/block/deepslate_lead_ore.json
       113  1980-01-01 00:00   assets/ironworks/models/block/deepslate_nickel_ore.json
       113  1980-01-01 00:00   assets/ironworks/models/block/deepslate_silver_ore.json
@@ -373,13 +373,17 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       108  1980-01-01 00:00   assets/ironworks/models/item/coal_coke_gem.json
       104  1980-01-01 00:00   assets/ironworks/models/item/coal_dust.json
        43  1980-01-01 00:00   assets/ironworks/models/item/coke_oven.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/copper_block.json
       109  1980-01-01 00:00   assets/ironworks/models/item/copper_crushed.json
       115  1980-01-01 00:00   assets/ironworks/models/item/copper_deepslate_ore.json
       106  1980-01-01 00:00   assets/ironworks/models/item/copper_dust.json
       106  1980-01-01 00:00   assets/ironworks/models/item/copper_gear.json
       108  1980-01-01 00:00   assets/ironworks/models/item/copper_hammer.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/copper_ingot.json
       108  1980-01-01 00:00   assets/ironworks/models/item/copper_nugget.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/copper_ore.json
       107  1980-01-01 00:00   assets/ironworks/models/item/copper_plate.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/copper_raw.json
       105  1980-01-01 00:00   assets/ironworks/models/item/copper_rod.json
       106  1980-01-01 00:00   assets/ironworks/models/item/copper_wire.json
        52  1980-01-01 00:00   assets/ironworks/models/item/deepslate_lead_ore.json
@@ -491,122 +495,126 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       104  1980-01-01 00:00   assets/ironworks/models/item/zinc_wire.json
         0  1980-01-01 00:00   assets/ironworks/textures/
         0  1980-01-01 00:00   assets/ironworks/textures/block/
-      447  1980-01-01 00:00   assets/ironworks/textures/block/brass_block.png
-      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front.png
-      524  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front_on.png
-      436  1980-01-01 00:00   assets/ironworks/textures/block/bronze_block.png
-      542  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front.png
-      512  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front_on.png
+      439  1980-01-01 00:00   assets/ironworks/textures/block/brass_block.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front.png
+      520  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front_on.png
+      441  1980-01-01 00:00   assets/ironworks/textures/block/bronze_block.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front.png
+      516  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front_on.png
       546  1980-01-01 00:00   assets/ironworks/textures/block/bronze_extractor_front.png
-      528  1980-01-01 00:00   assets/ironworks/textures/block/bronze_extractor_front_on.png
-      552  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front.png
-      517  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front_on.png
-      550  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front.png
-      524  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front_on.png
-      535  1980-01-01 00:00   assets/ironworks/textures/block/bronze_liquid_boiler_front.png
+      513  1980-01-01 00:00   assets/ironworks/textures/block/bronze_extractor_front_on.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front.png
+      506  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front_on.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_liquid_boiler_front.png
       519  1980-01-01 00:00   assets/ironworks/textures/block/bronze_liquid_boiler_front_on.png
-      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front.png
-      530  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front_on.png
+      546  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front.png
+      525  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front_on.png
       436  1980-01-01 00:00   assets/ironworks/textures/block/bronze_machine_side.png
-      429  1980-01-01 00:00   assets/ironworks/textures/block/bronze_machine_top.png
-      539  1980-01-01 00:00   assets/ironworks/textures/block/bronze_pipe.png
-      546  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front.png
-      517  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front_on.png
-      531  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solar_boiler_front.png
+      433  1980-01-01 00:00   assets/ironworks/textures/block/bronze_machine_top.png
+      550  1980-01-01 00:00   assets/ironworks/textures/block/bronze_pipe.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front.png
+      513  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front_on.png
+      541  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solar_boiler_front.png
       509  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solar_boiler_front_on.png
-      535  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front.png
-      525  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front_on.png
-      436  1980-01-01 00:00   assets/ironworks/textures/block/coal_coke_block.png
-      543  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front.png
-      522  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front_on.png
+      528  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front_on.png
+      442  1980-01-01 00:00   assets/ironworks/textures/block/coal_coke_block.png
+      546  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front.png
+      530  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front_on.png
+      424  1980-01-01 00:00   assets/ironworks/textures/block/copper_block.png
+      801  1980-01-01 00:00   assets/ironworks/textures/block/copper_ore.png
       791  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_copper_ore.png
-      798  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_lead_ore.png
-      809  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_nickel_ore.png
-      804  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_silver_ore.png
-      794  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_tin_ore.png
-      820  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_zinc_ore.png
-      431  1980-01-01 00:00   assets/ironworks/textures/block/firebrick.png
-      440  1980-01-01 00:00   assets/ironworks/textures/block/lead_block.png
-      769  1980-01-01 00:00   assets/ironworks/textures/block/lead_ore.png
+      806  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_lead_ore.png
+      803  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_nickel_ore.png
+      807  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_silver_ore.png
+      815  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_tin_ore.png
+      818  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_zinc_ore.png
+      445  1980-01-01 00:00   assets/ironworks/textures/block/firebrick.png
+      439  1980-01-01 00:00   assets/ironworks/textures/block/lead_block.png
+      761  1980-01-01 00:00   assets/ironworks/textures/block/lead_ore.png
       439  1980-01-01 00:00   assets/ironworks/textures/block/nickel_block.png
-      767  1980-01-01 00:00   assets/ironworks/textures/block/nickel_ore.png
-      541  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front.png
-      532  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front_on.png
-      544  1980-01-01 00:00   assets/ironworks/textures/block/reinforced_bronze_pipe.png
-      435  1980-01-01 00:00   assets/ironworks/textures/block/silver_block.png
-      797  1980-01-01 00:00   assets/ironworks/textures/block/silver_ore.png
-      540  1980-01-01 00:00   assets/ironworks/textures/block/small_bronze_pipe.png
-      536  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front.png
-      525  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front_on.png
-      435  1980-01-01 00:00   assets/ironworks/textures/block/steel_block.png
-      538  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front.png
-      521  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front_on.png
-      542  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front.png
-      522  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front_on.png
-      548  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front.png
-      527  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front_on.png
-      541  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front.png
-      522  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front_on.png
-      542  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front.png
-      531  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front_on.png
-      548  1980-01-01 00:00   assets/ironworks/textures/block/steel_macerator_front.png
+      796  1980-01-01 00:00   assets/ironworks/textures/block/nickel_ore.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front.png
+      529  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front_on.png
+      543  1980-01-01 00:00   assets/ironworks/textures/block/reinforced_bronze_pipe.png
+      433  1980-01-01 00:00   assets/ironworks/textures/block/silver_block.png
+      808  1980-01-01 00:00   assets/ironworks/textures/block/silver_ore.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/small_bronze_pipe.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front.png
+      517  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front_on.png
+      444  1980-01-01 00:00   assets/ironworks/textures/block/steel_block.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front.png
+      526  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front_on.png
+      535  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front_on.png
+      536  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front.png
+      524  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front.png
+      529  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front_on.png
+      534  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front.png
+      523  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_macerator_front.png
       528  1980-01-01 00:00   assets/ironworks/textures/block/steel_macerator_front_on.png
-      436  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_side.png
-      435  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_top.png
-      549  1980-01-01 00:00   assets/ironworks/textures/block/steel_pipe.png
-      539  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front.png
-      521  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front_on.png
-      541  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front.png
-      514  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front_on.png
-      536  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front.png
-      528  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front_on.png
-      441  1980-01-01 00:00   assets/ironworks/textures/block/tin_block.png
-      801  1980-01-01 00:00   assets/ironworks/textures/block/tin_ore.png
-      441  1980-01-01 00:00   assets/ironworks/textures/block/zinc_block.png
-      807  1980-01-01 00:00   assets/ironworks/textures/block/zinc_ore.png
+      430  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_side.png
+      429  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_top.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/steel_pipe.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front.png
+      532  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front_on.png
+      538  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front.png
+      509  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front_on.png
+      524  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front.png
+      522  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front_on.png
+      438  1980-01-01 00:00   assets/ironworks/textures/block/tin_block.png
+      810  1980-01-01 00:00   assets/ironworks/textures/block/tin_ore.png
+      437  1980-01-01 00:00   assets/ironworks/textures/block/zinc_block.png
+      818  1980-01-01 00:00   assets/ironworks/textures/block/zinc_ore.png
         0  1980-01-01 00:00   assets/ironworks/textures/gui/
-      872  1980-01-01 00:00   assets/ironworks/textures/gui/machine.png
+      945  1980-01-01 00:00   assets/ironworks/textures/gui/machine.png
         0  1980-01-01 00:00   assets/ironworks/textures/item/
-      536  1980-01-01 00:00   assets/ironworks/textures/item/basic_electrical_circuit.png
-      235  1980-01-01 00:00   assets/ironworks/textures/item/brass_dust.png
+      526  1980-01-01 00:00   assets/ironworks/textures/item/basic_electrical_circuit.png
+      240  1980-01-01 00:00   assets/ironworks/textures/item/brass_dust.png
       196  1980-01-01 00:00   assets/ironworks/textures/item/brass_gear.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/brass_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/brass_nugget.png
-      137  1980-01-01 00:00   assets/ironworks/textures/item/brass_plate.png
+      135  1980-01-01 00:00   assets/ironworks/textures/item/brass_plate.png
       150  1980-01-01 00:00   assets/ironworks/textures/item/brass_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/brass_wire.png
-      226  1980-01-01 00:00   assets/ironworks/textures/item/bronze_dust.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/bronze_dust.png
       191  1980-01-01 00:00   assets/ironworks/textures/item/bronze_gear.png
       118  1980-01-01 00:00   assets/ironworks/textures/item/bronze_hammer.png
-      133  1980-01-01 00:00   assets/ironworks/textures/item/bronze_ingot.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/bronze_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/bronze_nugget.png
-      135  1980-01-01 00:00   assets/ironworks/textures/item/bronze_plate.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/bronze_plate.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/bronze_ring.png
       148  1980-01-01 00:00   assets/ironworks/textures/item/bronze_rod.png
       110  1980-01-01 00:00   assets/ironworks/textures/item/bronze_screw.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/bronze_wire.png
-      226  1980-01-01 00:00   assets/ironworks/textures/item/charcoal_dust.png
-      203  1980-01-01 00:00   assets/ironworks/textures/item/coal_coke_dust.png
+      224  1980-01-01 00:00   assets/ironworks/textures/item/charcoal_dust.png
+      207  1980-01-01 00:00   assets/ironworks/textures/item/coal_coke_dust.png
        94  1980-01-01 00:00   assets/ironworks/textures/item/coal_coke_gem.png
-      194  1980-01-01 00:00   assets/ironworks/textures/item/coal_dust.png
-      178  1980-01-01 00:00   assets/ironworks/textures/item/copper_crushed.png
-      209  1980-01-01 00:00   assets/ironworks/textures/item/copper_dust.png
+      211  1980-01-01 00:00   assets/ironworks/textures/item/coal_dust.png
+      182  1980-01-01 00:00   assets/ironworks/textures/item/copper_crushed.png
+      221  1980-01-01 00:00   assets/ironworks/textures/item/copper_dust.png
       190  1980-01-01 00:00   assets/ironworks/textures/item/copper_gear.png
       117  1980-01-01 00:00   assets/ironworks/textures/item/copper_hammer.png
+      129  1980-01-01 00:00   assets/ironworks/textures/item/copper_ingot.png
       105  1980-01-01 00:00   assets/ironworks/textures/item/copper_nugget.png
       133  1980-01-01 00:00   assets/ironworks/textures/item/copper_plate.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/copper_raw.png
       148  1980-01-01 00:00   assets/ironworks/textures/item/copper_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/copper_wire.png
-      550  1980-01-01 00:00   assets/ironworks/textures/item/engineering_wrench.png
-      169  1980-01-01 00:00   assets/ironworks/textures/item/gold_crushed.png
-      173  1980-01-01 00:00   assets/ironworks/textures/item/gold_dust.png
+      545  1980-01-01 00:00   assets/ironworks/textures/item/engineering_wrench.png
+      167  1980-01-01 00:00   assets/ironworks/textures/item/gold_crushed.png
+      208  1980-01-01 00:00   assets/ironworks/textures/item/gold_dust.png
       168  1980-01-01 00:00   assets/ironworks/textures/item/gold_gear.png
-      132  1980-01-01 00:00   assets/ironworks/textures/item/gold_plate.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/gold_plate.png
       146  1980-01-01 00:00   assets/ironworks/textures/item/gold_rod.png
       118  1980-01-01 00:00   assets/ironworks/textures/item/gold_wire.png
        94  1980-01-01 00:00   assets/ironworks/textures/item/iron_bolt.png
-      183  1980-01-01 00:00   assets/ironworks/textures/item/iron_crushed.png
-      245  1980-01-01 00:00   assets/ironworks/textures/item/iron_dust.png
+      199  1980-01-01 00:00   assets/ironworks/textures/item/iron_crushed.png
+      217  1980-01-01 00:00   assets/ironworks/textures/item/iron_dust.png
       182  1980-01-01 00:00   assets/ironworks/textures/item/iron_gear.png
       118  1980-01-01 00:00   assets/ironworks/textures/item/iron_hammer.png
       137  1980-01-01 00:00   assets/ironworks/textures/item/iron_plate.png
@@ -614,61 +622,61 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       144  1980-01-01 00:00   assets/ironworks/textures/item/iron_rod.png
       110  1980-01-01 00:00   assets/ironworks/textures/item/iron_screw.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/iron_wire.png
-      192  1980-01-01 00:00   assets/ironworks/textures/item/lead_crushed.png
-      230  1980-01-01 00:00   assets/ironworks/textures/item/lead_dust.png
+      177  1980-01-01 00:00   assets/ironworks/textures/item/lead_crushed.png
+      212  1980-01-01 00:00   assets/ironworks/textures/item/lead_dust.png
       191  1980-01-01 00:00   assets/ironworks/textures/item/lead_gear.png
-      137  1980-01-01 00:00   assets/ironworks/textures/item/lead_ingot.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/lead_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/lead_nugget.png
       135  1980-01-01 00:00   assets/ironworks/textures/item/lead_plate.png
-      253  1980-01-01 00:00   assets/ironworks/textures/item/lead_raw.png
+      272  1980-01-01 00:00   assets/ironworks/textures/item/lead_raw.png
       147  1980-01-01 00:00   assets/ironworks/textures/item/lead_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/lead_wire.png
-      198  1980-01-01 00:00   assets/ironworks/textures/item/nickel_crushed.png
-      225  1980-01-01 00:00   assets/ironworks/textures/item/nickel_dust.png
+      180  1980-01-01 00:00   assets/ironworks/textures/item/nickel_crushed.png
+      226  1980-01-01 00:00   assets/ironworks/textures/item/nickel_dust.png
       188  1980-01-01 00:00   assets/ironworks/textures/item/nickel_gear.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/nickel_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/nickel_nugget.png
-      135  1980-01-01 00:00   assets/ironworks/textures/item/nickel_plate.png
-      309  1980-01-01 00:00   assets/ironworks/textures/item/nickel_raw.png
+      137  1980-01-01 00:00   assets/ironworks/textures/item/nickel_plate.png
+      265  1980-01-01 00:00   assets/ironworks/textures/item/nickel_raw.png
       147  1980-01-01 00:00   assets/ironworks/textures/item/nickel_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/nickel_wire.png
-      533  1980-01-01 00:00   assets/ironworks/textures/item/raw_rubber_pulp.png
-      543  1980-01-01 00:00   assets/ironworks/textures/item/rubber.png
-      176  1980-01-01 00:00   assets/ironworks/textures/item/silver_crushed.png
-      198  1980-01-01 00:00   assets/ironworks/textures/item/silver_dust.png
+      536  1980-01-01 00:00   assets/ironworks/textures/item/raw_rubber_pulp.png
+      521  1980-01-01 00:00   assets/ironworks/textures/item/rubber.png
+      170  1980-01-01 00:00   assets/ironworks/textures/item/silver_crushed.png
+      231  1980-01-01 00:00   assets/ironworks/textures/item/silver_dust.png
       189  1980-01-01 00:00   assets/ironworks/textures/item/silver_gear.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/silver_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/silver_nugget.png
       135  1980-01-01 00:00   assets/ironworks/textures/item/silver_plate.png
-      248  1980-01-01 00:00   assets/ironworks/textures/item/silver_raw.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/silver_raw.png
       150  1980-01-01 00:00   assets/ironworks/textures/item/silver_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/silver_wire.png
-      271  1980-01-01 00:00   assets/ironworks/textures/item/steel_dust.png
+      223  1980-01-01 00:00   assets/ironworks/textures/item/steel_dust.png
       184  1980-01-01 00:00   assets/ironworks/textures/item/steel_gear.png
       118  1980-01-01 00:00   assets/ironworks/textures/item/steel_hammer.png
-      131  1980-01-01 00:00   assets/ironworks/textures/item/steel_ingot.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/steel_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/steel_nugget.png
       133  1980-01-01 00:00   assets/ironworks/textures/item/steel_plate.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/steel_ring.png
       147  1980-01-01 00:00   assets/ironworks/textures/item/steel_rod.png
       110  1980-01-01 00:00   assets/ironworks/textures/item/steel_screw.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/steel_wire.png
-      199  1980-01-01 00:00   assets/ironworks/textures/item/tin_crushed.png
-      217  1980-01-01 00:00   assets/ironworks/textures/item/tin_dust.png
+      194  1980-01-01 00:00   assets/ironworks/textures/item/tin_crushed.png
+      212  1980-01-01 00:00   assets/ironworks/textures/item/tin_dust.png
       188  1980-01-01 00:00   assets/ironworks/textures/item/tin_gear.png
-      131  1980-01-01 00:00   assets/ironworks/textures/item/tin_ingot.png
+      130  1980-01-01 00:00   assets/ironworks/textures/item/tin_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/tin_nugget.png
       137  1980-01-01 00:00   assets/ironworks/textures/item/tin_plate.png
-      262  1980-01-01 00:00   assets/ironworks/textures/item/tin_raw.png
+      280  1980-01-01 00:00   assets/ironworks/textures/item/tin_raw.png
       148  1980-01-01 00:00   assets/ironworks/textures/item/tin_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/tin_wire.png
-      181  1980-01-01 00:00   assets/ironworks/textures/item/zinc_crushed.png
-      222  1980-01-01 00:00   assets/ironworks/textures/item/zinc_dust.png
+      179  1980-01-01 00:00   assets/ironworks/textures/item/zinc_crushed.png
+      210  1980-01-01 00:00   assets/ironworks/textures/item/zinc_dust.png
       188  1980-01-01 00:00   assets/ironworks/textures/item/zinc_gear.png
       131  1980-01-01 00:00   assets/ironworks/textures/item/zinc_ingot.png
       106  1980-01-01 00:00   assets/ironworks/textures/item/zinc_nugget.png
-      135  1980-01-01 00:00   assets/ironworks/textures/item/zinc_plate.png
-      255  1980-01-01 00:00   assets/ironworks/textures/item/zinc_raw.png
+      134  1980-01-01 00:00   assets/ironworks/textures/item/zinc_plate.png
+      262  1980-01-01 00:00   assets/ironworks/textures/item/zinc_raw.png
       148  1980-01-01 00:00   assets/ironworks/textures/item/zinc_rod.png
       119  1980-01-01 00:00   assets/ironworks/textures/item/zinc_wire.png
         0  1980-01-01 00:00   assets/modid/
@@ -676,10 +684,10 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
         0  1980-01-01 00:00   com/
         0  1980-01-01 00:00   com/benluvzbacon/
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/
-     1559  1980-01-01 00:00   com/benluvzbacon/ironworks/Ironworks.class
+     1502  1980-01-01 00:00   com/benluvzbacon/ironworks/Ironworks.class
      1922  1980-01-01 00:00   com/benluvzbacon/ironworks/IronworksClient.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/block/
-      871  1980-01-01 00:00   com/benluvzbacon/ironworks/block/BoilerBlock.class
+     1689  1980-01-01 00:00   com/benluvzbacon/ironworks/block/BoilerBlock.class
      4876  1980-01-01 00:00   com/benluvzbacon/ironworks/block/MachineBlock.class
       865  1980-01-01 00:00   com/benluvzbacon/ironworks/block/PipeBlock.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/block/entity/
@@ -689,72 +697,22 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
      1937  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreen.class
      2031  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreenHandler.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/
-     5640  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/IronworksJeiPlugin.class
-     4382  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/MachineRecipeCategory.class
-        0  1980-01-01 00:00   com/benluvzbacon/ironworks/recipe/
-     3073  1980-01-01 00:00   com/benluvzbacon/ironworks/recipe/MachineRecipe.class
+     1378  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/IronworksJeiPlugin.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/
      3325  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModBlockEntities.class
-     5131  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModBlocks.class
+     5431  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModBlocks.class
       382  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModCommands.class
      2646  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModExtraBlocks.class
      2071  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModExtraItems.class
       376  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModFluids.class
-     8174  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItemGroups.class
-    12410  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItems.class
-      738  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModRecipes$1.class
-      739  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModRecipes$2.class
-      738  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModRecipes$3.class
-     5950  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModRecipes$MachineRecipeSerializer.class
-     1983  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModRecipes.class
+     8368  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItemGroups.class
+    12848  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItems.class
      2063  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModScreenHandlers.class
      1538  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModWorldGen.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/steam/
       298  1980-01-01 00:00   com/benluvzbacon/ironworks/steam/ISteamNode.class
         0  1980-01-01 00:00   data/
         0  1980-01-01 00:00   data/ironworks/
-        0  1980-01-01 00:00   data/ironworks/loot_table/
-        0  1980-01-01 00:00   data/ironworks/loot_table/blocks/
-      309  1980-01-01 00:00   data/ironworks/loot_table/blocks/brass_block.json
-      318  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_alloy_smelter.json
-      310  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_block.json
-      311  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_boiler.json
-      315  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_compressor.json
-      314  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_extractor.json
-      317  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_forge_hammer.json
-      312  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_furnace.json
-      314  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_macerator.json
-      317  1980-01-01 00:00   data/ironworks/loot_table/blocks/bronze_rock_breaker.json
-      313  1980-01-01 00:00   data/ironworks/loot_table/blocks/coal_coke_block.json
-      307  1980-01-01 00:00   data/ironworks/loot_table/blocks/coke_oven.json
-      306  1980-01-01 00:00   data/ironworks/loot_table/blocks/deepslate_lead_ore.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/deepslate_nickel_ore.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/deepslate_silver_ore.json
-      305  1980-01-01 00:00   data/ironworks/loot_table/blocks/deepslate_tin_ore.json
-      306  1980-01-01 00:00   data/ironworks/loot_table/blocks/deepslate_zinc_ore.json
-      317  1980-01-01 00:00   data/ironworks/loot_table/blocks/large_bronze_boiler.json
-      316  1980-01-01 00:00   data/ironworks/loot_table/blocks/large_steel_boiler.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/lead_block.json
-      306  1980-01-01 00:00   data/ironworks/loot_table/blocks/lead_ore.json
-      310  1980-01-01 00:00   data/ironworks/loot_table/blocks/nickel_block.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/nickel_ore.json
-      321  1980-01-01 00:00   data/ironworks/loot_table/blocks/primitive_blast_furnace.json
-      310  1980-01-01 00:00   data/ironworks/loot_table/blocks/silver_block.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/silver_ore.json
-      317  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_alloy_smelter.json
-      309  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_block.json
-      310  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_boiler.json
-      314  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_compressor.json
-      313  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_extractor.json
-      316  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_forge_hammer.json
-      311  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_furnace.json
-      313  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_macerator.json
-      316  1980-01-01 00:00   data/ironworks/loot_table/blocks/steel_rock_breaker.json
-      307  1980-01-01 00:00   data/ironworks/loot_table/blocks/tin_block.json
-      305  1980-01-01 00:00   data/ironworks/loot_table/blocks/tin_ore.json
-      310  1980-01-01 00:00   data/ironworks/loot_table/blocks/treated_wood.json
-      308  1980-01-01 00:00   data/ironworks/loot_table/blocks/zinc_block.json
-      306  1980-01-01 00:00   data/ironworks/loot_table/blocks/zinc_ore.json
         0  1980-01-01 00:00   data/ironworks/loot_tables/
       309  1980-01-01 00:00   data/ironworks/loot_tables/brass_block.json
       318  1980-01-01 00:00   data/ironworks/loot_tables/bronze_alloy_smelter.json
@@ -830,26 +788,21 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       281  1980-01-01 00:00   data/ironworks/recipes/bronze_rock_breaker.json
       218  1980-01-01 00:00   data/ironworks/recipes/bronze_rod.json
       210  1980-01-01 00:00   data/ironworks/recipes/coke_oven.json
-        0  1980-01-01 00:00   data/ironworks/recipes/compressing/
-      165  1980-01-01 00:00   data/ironworks/recipes/compressing/brass_plate.json
-      167  1980-01-01 00:00   data/ironworks/recipes/compressing/bronze_plate.json
-      167  1980-01-01 00:00   data/ironworks/recipes/compressing/copper_plate.json
-      163  1980-01-01 00:00   data/ironworks/recipes/compressing/gold_plate.json
-      163  1980-01-01 00:00   data/ironworks/recipes/compressing/iron_plate.json
-      163  1980-01-01 00:00   data/ironworks/recipes/compressing/lead_plate.json
-      167  1980-01-01 00:00   data/ironworks/recipes/compressing/nickel_plate.json
-      167  1980-01-01 00:00   data/ironworks/recipes/compressing/silver_plate.json
-      165  1980-01-01 00:00   data/ironworks/recipes/compressing/steel_plate.json
-      161  1980-01-01 00:00   data/ironworks/recipes/compressing/tin_plate.json
-      163  1980-01-01 00:00   data/ironworks/recipes/compressing/zinc_plate.json
+      219  1980-01-01 00:00   data/ironworks/recipes/copper_block.json
       193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_blasting.json
       193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_smelting.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_blasting.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_smelting.json
       273  1980-01-01 00:00   data/ironworks/recipes/copper_gear.json
       270  1980-01-01 00:00   data/ironworks/recipes/copper_hammer.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_from_block.json
+      220  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_from_nuggets.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_nugget.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ore_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ore_smelting.json
       224  1980-01-01 00:00   data/ironworks/recipes/copper_plate.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_raw_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_raw_smelting.json
       218  1980-01-01 00:00   data/ironworks/recipes/copper_rod.json
       277  1980-01-01 00:00   data/ironworks/recipes/engineering_wrench.json
       189  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_blasting.json
@@ -882,31 +835,6 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_smelting.json
       214  1980-01-01 00:00   data/ironworks/recipes/lead_rod.json
-        0  1980-01-01 00:00   data/ironworks/recipes/macerating/
-      167  1980-01-01 00:00   data/ironworks/recipes/macerating/copper_crushed_to_dust.json
-      165  1980-01-01 00:00   data/ironworks/recipes/macerating/copper_ingot_to_dust.json
-      166  1980-01-01 00:00   data/ironworks/recipes/macerating/copper_ore_to_crushed.json
-      163  1980-01-01 00:00   data/ironworks/recipes/macerating/gold_crushed_to_dust.json
-      161  1980-01-01 00:00   data/ironworks/recipes/macerating/gold_ingot_to_dust.json
-      162  1980-01-01 00:00   data/ironworks/recipes/macerating/gold_ore_to_crushed.json
-      163  1980-01-01 00:00   data/ironworks/recipes/macerating/iron_crushed_to_dust.json
-      161  1980-01-01 00:00   data/ironworks/recipes/macerating/iron_ingot_to_dust.json
-      162  1980-01-01 00:00   data/ironworks/recipes/macerating/iron_ore_to_crushed.json
-      163  1980-01-01 00:00   data/ironworks/recipes/macerating/lead_crushed_to_dust.json
-      161  1980-01-01 00:00   data/ironworks/recipes/macerating/lead_ingot_to_dust.json
-      162  1980-01-01 00:00   data/ironworks/recipes/macerating/lead_ore_to_crushed.json
-      167  1980-01-01 00:00   data/ironworks/recipes/macerating/nickel_crushed_to_dust.json
-      165  1980-01-01 00:00   data/ironworks/recipes/macerating/nickel_ingot_to_dust.json
-      166  1980-01-01 00:00   data/ironworks/recipes/macerating/nickel_ore_to_crushed.json
-      167  1980-01-01 00:00   data/ironworks/recipes/macerating/silver_crushed_to_dust.json
-      165  1980-01-01 00:00   data/ironworks/recipes/macerating/silver_ingot_to_dust.json
-      166  1980-01-01 00:00   data/ironworks/recipes/macerating/silver_ore_to_crushed.json
-      161  1980-01-01 00:00   data/ironworks/recipes/macerating/tin_crushed_to_dust.json
-      159  1980-01-01 00:00   data/ironworks/recipes/macerating/tin_ingot_to_dust.json
-      160  1980-01-01 00:00   data/ironworks/recipes/macerating/tin_ore_to_crushed.json
-      163  1980-01-01 00:00   data/ironworks/recipes/macerating/zinc_crushed_to_dust.json
-      161  1980-01-01 00:00   data/ironworks/recipes/macerating/zinc_ingot_to_dust.json
-      162  1980-01-01 00:00   data/ironworks/recipes/macerating/zinc_ore_to_crushed.json
       219  1980-01-01 00:00   data/ironworks/recipes/nickel_block.json
       193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_blasting.json
       193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_smelting.json
@@ -986,11 +914,6 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_smelting.json
       214  1980-01-01 00:00   data/ironworks/recipes/zinc_rod.json
-        0  1980-01-01 00:00   data/ironworks/tags/
-        0  1980-01-01 00:00   data/ironworks/tags/block/
-     1339  1980-01-01 00:00   data/ironworks/tags/block/mineable_with_pickaxe.json
-      226  1980-01-01 00:00   data/ironworks/tags/block/needs_iron_tool.json
-     1153  1980-01-01 00:00   data/ironworks/tags/block/needs_stone_tool.json
         0  1980-01-01 00:00   data/ironworks/worldgen/
         0  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/
       580  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/lead_ore.json
@@ -1015,4 +938,4 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       214  1980-01-01 00:00   ironworks.mixins.json
       214  1980-01-01 00:00   modid.mixins.json
 ---------                     -------
-   264857                     780 files
+   227737                     707 files

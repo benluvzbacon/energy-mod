@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PWP",
+    "PFP"
+  ],
+  "key": {
+    "P": {
+      "item": "ironworks:steel_plate"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "id": "ironworks:steel_solid_boiler"
+  }
+}

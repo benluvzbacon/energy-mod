@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "I I",
-    " G ",
-    " I "
+    "III",
+    "III",
+    " S "
   ],
   "key": {
     "I": {
       "item": "minecraft:iron_ingot"
     },
-    "G": {
-      "item": "ironworks:iron_gear"
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "ironworks:engineering_wrench"
+    "id": "ironworks:iron_hammer"
   }
 }

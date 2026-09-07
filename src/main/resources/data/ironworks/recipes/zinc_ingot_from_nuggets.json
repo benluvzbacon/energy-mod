@@ -11,6 +11,7 @@
     }
   },
   "result": {
-    "id": "ironworks:zinc_ingot"
+    "id": "ironworks:zinc_ingot",
+    "count": 1
   }
 }

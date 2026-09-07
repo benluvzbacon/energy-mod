@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:copper_ingot"
+      "item": "ironworks:bronze_rod"
     }
   ],
   "result": {
-    "id": "ironworks:copper_nugget",
-    "count": 9
+    "id": "ironworks:bronze_screw",
+    "count": 2
   }
 }

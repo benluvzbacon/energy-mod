@@ -11,6 +11,7 @@
     }
   },
   "result": {
-    "id": "ironworks:lead_ingot"
+    "id": "ironworks:lead_ingot",
+    "count": 1
   }
 }

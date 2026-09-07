@@ -11,6 +11,7 @@
     }
   },
   "result": {
-    "id": "ironworks:silver_ingot"
+    "id": "ironworks:silver_ingot",
+    "count": 1
   }
 }

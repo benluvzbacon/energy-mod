@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "NNN",
-    "NNN",
-    "NNN"
+    "BB ",
+    "BB ",
+    "   "
   ],
   "key": {
-    "N": {
-      "item": "ironworks:tin_nugget"
+    "B": {
+      "item": "minecraft:brick"
     }
   },
   "result": {
-    "id": "ironworks:tin_ingot",
+    "id": "ironworks:firebrick",
     "count": 1
   }
 }

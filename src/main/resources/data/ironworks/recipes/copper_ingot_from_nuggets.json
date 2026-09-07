@@ -7,11 +7,11 @@
   ],
   "key": {
     "N": {
-      "item": "ironworks:tin_nugget"
+      "item": "ironworks:copper_nugget"
     }
   },
   "result": {
-    "id": "ironworks:tin_ingot",
+    "id": "minecraft:copper_ingot",
     "count": 1
   }
 }

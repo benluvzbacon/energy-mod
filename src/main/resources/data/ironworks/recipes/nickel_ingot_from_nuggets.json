@@ -11,6 +11,7 @@
     }
   },
   "result": {
-    "id": "ironworks:nickel_ingot"
+    "id": "ironworks:nickel_ingot",
+    "count": 1
   }
 }

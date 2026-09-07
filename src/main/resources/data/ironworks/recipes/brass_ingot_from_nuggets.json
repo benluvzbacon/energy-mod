@@ -11,6 +11,7 @@
     }
   },
   "result": {
-    "id": "ironworks:brass_ingot"
+    "id": "ironworks:brass_ingot",
+    "count": 1
   }
 }

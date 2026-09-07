@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:copper_rod"
+    },
+    {
+      "item": "ironworks:iron_hammer"
+    }
+  ],
+  "result": {
+    "id": "ironworks:copper_wire"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:tin_rod"
+    },
+    {
+      "item": "ironworks:iron_hammer"
+    }
+  ],
+  "result": {
+    "id": "ironworks:tin_wire"
+  }
+}

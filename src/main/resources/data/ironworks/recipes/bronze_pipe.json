@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "   ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ironworks:bronze_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:bronze_pipe",
+    "count": 6
+  }
+}
