@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ironworks:tin_ore"
+  },
+  "result": {
+    "id": "ironworks:tin_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

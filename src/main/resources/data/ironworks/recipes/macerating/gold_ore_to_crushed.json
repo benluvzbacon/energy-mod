@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "minecraft:gold_ore"
+  },
+  "result": {
+    "id": "ironworks:gold_crushed",
+    "count": 2
+  }
+}

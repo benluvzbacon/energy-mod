@@ -1,0 +1,941 @@
+Fetching distribution.
+Downloading https://services.gradle.org/distributions/gradle-8.10.2-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 8.10.2!
+
+Here are the highlights of this release:
+ - Support for Java 23
+ - Faster configuration cache
+ - Better configuration cache reports
+
+For more details see https://docs.gradle.org/8.10.2/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+Fabric Loom: 1.8.13
+:remapping 50 mods from modImplementation (java-api)
+:remapping 2 mods from modCompileOnly (java-api)
+
+duplicate input class mezz/jei/api/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric-api/19.32.0.358/9d9adc8e49acb19787b0b4de94040d22801b3bc7/jei-1.21.1-fabric-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api-intermediary/19.32.0.358/19f430ab2a3ec7a94dd2d48b62206cd92d8d4324/jei-1.21.1-common-api-intermediary-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigValueSerializer, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigValueSerializer$IDeserializeResult, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigValue, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigManager, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigListValueSerializer, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigFile, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/config/IJeiConfigCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IScreenHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IRecipesGui, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IJeiRuntime, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IJeiKeyMappings, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IJeiKeyMapping, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IJeiFeatures, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientVisibility, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientVisibility$IListener, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientManager, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientManager$IIngredientListener, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientListOverlay, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IIngredientFilter, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IEditModeConfig, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IEditModeConfig$HideMode, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IClickableIngredient, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/runtime/IBookmarkOverlay, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IVanillaCategoryExtensionRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/ISubtypeRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IRuntimeRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IRecipeTransferRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IRecipeRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IRecipeCategoryRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IRecipeCatalystRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IModIngredientRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IModInfoRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IIngredientAliasRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IGuiHandlerRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IGuiHandlerRegistration$1, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IExtraIngredientRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/registration/IAdvancedRegistration, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IVanillaRecipeFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiShapedRecipeBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiIngredientInfoRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiGrindstoneRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiFuelingRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiCompostingRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiBrewingRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/vanilla/IJeiAnvilRecipe, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IUniversalRecipeTransferHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferManager, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferInfo, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferHandlerHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferError, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/transfer/IRecipeTransferError$Type, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/smithing/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/smithing/ISmithingCategoryExtension, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/smithing/IExtendableSmithingRecipeCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/crafting/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/crafting/IExtendableCraftingRecipeCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/vanilla/crafting/ICraftingCategoryExtension, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/IRecipeCategoryExtension, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/IRecipeCategoryDecorator, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/extensions/IExtendableRecipeCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/IRecipeCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/category/AbstractRecipeCategory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/advanced/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/advanced/ISimpleRecipeManagerPlugin, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/advanced/IRecipeManagerPluginHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/advanced/IRecipeManagerPlugin, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/advanced/IRecipeButtonControllerFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/RecipeType, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/RecipeIngredientRole, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IRecipeManager, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IRecipeLookup, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IRecipeCategoriesLookup, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IRecipeCatalystLookup, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IFocusGroup, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IFocusFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/recipe/IFocus, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/subtypes/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/subtypes/UidContext, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/subtypes/ISubtypeManager, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/subtypes/ISubtypeInterpreter, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/subtypes/IIngredientSubtypeInterpreter, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/rendering/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/rendering/BatchRenderElement, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/ITypedIngredient, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/IIngredientTypeWithSubtypes, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/IIngredientType, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/IIngredientSupplier, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/IIngredientRenderer, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/ingredients/IIngredientHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IStackHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IPlatformFluidHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IModIdHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IJeiHelpers, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IGuiHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/IColorHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/helpers/ICodecHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/ITextWidget, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/ISlottedWidgetFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/ISlottedRecipeWidget, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/IScrollGridWidgetFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/IScrollGridWidget, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/IScrollBoxWidget, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/IRecipeWidget, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/widgets/IRecipeExtrasBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/VerticalAlignment, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/VerticalAlignment$3, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/VerticalAlignment$2, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/VerticalAlignment$1, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/IPlaceable, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/HorizontalAlignment, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/HorizontalAlignment$3, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/HorizontalAlignment$2, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/placement/HorizontalAlignment$1, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/inputs/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/inputs/RecipeSlotUnderMouse, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/inputs/IJeiUserInput, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/inputs/IJeiInputHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/inputs/IJeiGuiEventListener, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotsView, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotView, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotTooltipCallback, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotRichTooltipCallback, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotDrawablesView, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/IRecipeSlotDrawable, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ingredient/ICraftingGridHelper, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IScreenHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGuiProperties, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGuiContainerHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGuiClickableArea, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGuiClickableArea$1, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGlobalGuiHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGhostIngredientHandler, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/handlers/IGhostIngredientHandler$Target, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IScalableDrawable, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IDrawableStatic, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IDrawableBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IDrawableAnimated, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IDrawableAnimated$StartDirection, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/drawable/IDrawable, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/buttons/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/buttons/IIconButtonController, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/buttons/IButtonState, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/ITooltipBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IRecipeSlotBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IRecipeLayoutBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IIngredientConsumer, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IIngredientAcceptor, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IClickableIngredientFactory, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/builder/IClickableIngredientFactory$IBuilder, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/ITickTimer, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/gui/IRecipeLayoutDrawable, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/package-info, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/VanillaTypes, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/VanillaTypes$1, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/Tags, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/RecipeTypes, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/constants/ModIds, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/JeiPlugin, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+duplicate input class mezz/jei/api/IModPlugin, from /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-common-api/19.32.0.358/321b2a4a405154107a9a3919ba7684e0ed5673e3/jei-1.21.1-common-api-19.32.0.358.jar and /home/runner/.gradle/caches/modules-2/files-2.1/mezz.jei/jei-1.21.1-fabric/19.32.0.358/cee8d0f983f5b0b8d7b7a29280efc73fc442b5f9/jei-1.21.1-fabric-19.32.0.358.jar
+
+> Configure project :
+:remapping 2 mods from modLocalRuntime (java-runtime)
+
+> Task :compileJava
+Note: /home/runner/work/energy-mod/energy-mod/src/main/java/com/benluvzbacon/ironworks/registry/ModBlockEntities.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :compileTestJava NO-SOURCE
+> Task :processIncludeJars
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :validateAccessWidener NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :remapJar
+> Task :remapSourcesJar SKIPPED
+> Task :assemble
+> Task :build
+
+BUILD SUCCESSFUL in 1m 4s
+5 actionable tasks: 5 executed
+LIBS DIRECTORY:
+total 268K
+-rw-r--r-- 1 runner runner 265K Sep  7 15:45 ironworks-steam-age-1.0.0.jar
+JAR CONTENTS:
+Archive:  build/libs/ironworks-steam-age-1.0.0.jar
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      415  1980-01-01 00:00   META-INF/MANIFEST.MF
+        0  1980-01-01 00:00   META-INF/
+        0  1980-01-01 00:00   assets/
+        0  1980-01-01 00:00   assets/ironworks/
+        0  1980-01-01 00:00   assets/ironworks/blockstates/
+       84  1980-01-01 00:00   assets/ironworks/blockstates/brass_block.json
+      864  1980-01-01 00:00   assets/ironworks/blockstates/bronze_alloy_smelter.json
+       85  1980-01-01 00:00   assets/ironworks/blockstates/bronze_block.json
+      796  1980-01-01 00:00   assets/ironworks/blockstates/bronze_boiler.json
+      840  1980-01-01 00:00   assets/ironworks/blockstates/bronze_compressor.json
+      832  1980-01-01 00:00   assets/ironworks/blockstates/bronze_extractor.json
+      856  1980-01-01 00:00   assets/ironworks/blockstates/bronze_forge_hammer.json
+      816  1980-01-01 00:00   assets/ironworks/blockstates/bronze_furnace.json
+      832  1980-01-01 00:00   assets/ironworks/blockstates/bronze_macerator.json
+      856  1980-01-01 00:00   assets/ironworks/blockstates/bronze_rock_breaker.json
+       88  1980-01-01 00:00   assets/ironworks/blockstates/coal_coke_block.json
+      764  1980-01-01 00:00   assets/ironworks/blockstates/coke_oven.json
+       85  1980-01-01 00:00   assets/ironworks/blockstates/copper_block.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/copper_ore.json
+       91  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_lead_ore.json
+       93  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_nickel_ore.json
+       93  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_silver_ore.json
+       90  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_tin_ore.json
+       91  1980-01-01 00:00   assets/ironworks/blockstates/deepslate_zinc_ore.json
+      844  1980-01-01 00:00   assets/ironworks/blockstates/large_bronze_boiler.json
+      836  1980-01-01 00:00   assets/ironworks/blockstates/large_steel_boiler.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/lead_block.json
+       81  1980-01-01 00:00   assets/ironworks/blockstates/lead_ore.json
+       85  1980-01-01 00:00   assets/ironworks/blockstates/nickel_block.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/nickel_ore.json
+      876  1980-01-01 00:00   assets/ironworks/blockstates/primitive_blast_furnace.json
+       85  1980-01-01 00:00   assets/ironworks/blockstates/silver_block.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/silver_ore.json
+      856  1980-01-01 00:00   assets/ironworks/blockstates/steel_alloy_smelter.json
+       84  1980-01-01 00:00   assets/ironworks/blockstates/steel_block.json
+      788  1980-01-01 00:00   assets/ironworks/blockstates/steel_boiler.json
+      832  1980-01-01 00:00   assets/ironworks/blockstates/steel_compressor.json
+      824  1980-01-01 00:00   assets/ironworks/blockstates/steel_extractor.json
+      848  1980-01-01 00:00   assets/ironworks/blockstates/steel_forge_hammer.json
+      808  1980-01-01 00:00   assets/ironworks/blockstates/steel_furnace.json
+      824  1980-01-01 00:00   assets/ironworks/blockstates/steel_macerator.json
+      848  1980-01-01 00:00   assets/ironworks/blockstates/steel_rock_breaker.json
+       82  1980-01-01 00:00   assets/ironworks/blockstates/tin_block.json
+       80  1980-01-01 00:00   assets/ironworks/blockstates/tin_ore.json
+      788  1980-01-01 00:00   assets/ironworks/blockstates/treated_wood.json
+       83  1980-01-01 00:00   assets/ironworks/blockstates/zinc_block.json
+       81  1980-01-01 00:00   assets/ironworks/blockstates/zinc_ore.json
+      191  1980-01-01 00:00   assets/ironworks/icon.png
+        0  1980-01-01 00:00   assets/ironworks/lang/
+     6880  1980-01-01 00:00   assets/ironworks/lang/en_us.json
+        0  1980-01-01 00:00   assets/ironworks/models/
+        0  1980-01-01 00:00   assets/ironworks/models/block/
+      104  1980-01-01 00:00   assets/ironworks/models/block/brass_block.json
+      223  1980-01-01 00:00   assets/ironworks/models/block/bronze_alloy_smelter.json
+      226  1980-01-01 00:00   assets/ironworks/models/block/bronze_alloy_smelter_on.json
+      105  1980-01-01 00:00   assets/ironworks/models/block/bronze_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/bronze_boiler.json
+      220  1980-01-01 00:00   assets/ironworks/models/block/bronze_compressor.json
+      223  1980-01-01 00:00   assets/ironworks/models/block/bronze_compressor_on.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/bronze_extractor.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/bronze_extractor_on.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/bronze_forge_hammer.json
+      225  1980-01-01 00:00   assets/ironworks/models/block/bronze_forge_hammer_on.json
+      217  1980-01-01 00:00   assets/ironworks/models/block/bronze_furnace.json
+      220  1980-01-01 00:00   assets/ironworks/models/block/bronze_furnace_on.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/bronze_macerator.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/bronze_macerator_on.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/bronze_rock_breaker.json
+      225  1980-01-01 00:00   assets/ironworks/models/block/bronze_rock_breaker_on.json
+      108  1980-01-01 00:00   assets/ironworks/models/block/coal_coke_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/coke_oven.json
+      105  1980-01-01 00:00   assets/ironworks/models/block/copper_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/copper_ore.json
+      111  1980-01-01 00:00   assets/ironworks/models/block/deepslate_lead_ore.json
+      113  1980-01-01 00:00   assets/ironworks/models/block/deepslate_nickel_ore.json
+      113  1980-01-01 00:00   assets/ironworks/models/block/deepslate_silver_ore.json
+      110  1980-01-01 00:00   assets/ironworks/models/block/deepslate_tin_ore.json
+      111  1980-01-01 00:00   assets/ironworks/models/block/deepslate_zinc_ore.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/large_bronze_boiler.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/large_steel_boiler.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/lead_block.json
+      101  1980-01-01 00:00   assets/ironworks/models/block/lead_ore.json
+      105  1980-01-01 00:00   assets/ironworks/models/block/nickel_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/nickel_ore.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/primitive_blast_furnace.json
+      105  1980-01-01 00:00   assets/ironworks/models/block/silver_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/silver_ore.json
+      220  1980-01-01 00:00   assets/ironworks/models/block/steel_alloy_smelter.json
+      223  1980-01-01 00:00   assets/ironworks/models/block/steel_alloy_smelter_on.json
+      104  1980-01-01 00:00   assets/ironworks/models/block/steel_block.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/steel_boiler.json
+      217  1980-01-01 00:00   assets/ironworks/models/block/steel_compressor.json
+      220  1980-01-01 00:00   assets/ironworks/models/block/steel_compressor_on.json
+      216  1980-01-01 00:00   assets/ironworks/models/block/steel_extractor.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/steel_extractor_on.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/steel_forge_hammer.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/steel_forge_hammer_on.json
+      214  1980-01-01 00:00   assets/ironworks/models/block/steel_furnace.json
+      217  1980-01-01 00:00   assets/ironworks/models/block/steel_furnace_on.json
+      216  1980-01-01 00:00   assets/ironworks/models/block/steel_macerator.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/steel_macerator_on.json
+      219  1980-01-01 00:00   assets/ironworks/models/block/steel_rock_breaker.json
+      222  1980-01-01 00:00   assets/ironworks/models/block/steel_rock_breaker_on.json
+      102  1980-01-01 00:00   assets/ironworks/models/block/tin_block.json
+      100  1980-01-01 00:00   assets/ironworks/models/block/tin_ore.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/treated_wood.json
+      103  1980-01-01 00:00   assets/ironworks/models/block/zinc_block.json
+      101  1980-01-01 00:00   assets/ironworks/models/block/zinc_ore.json
+        0  1980-01-01 00:00   assets/ironworks/models/item/
+      119  1980-01-01 00:00   assets/ironworks/models/item/basic_electrical_circuit.json
+       45  1980-01-01 00:00   assets/ironworks/models/item/brass_block.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/brass_dust.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/brass_gear.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/brass_ingot.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/brass_nugget.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/brass_plate.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/brass_rod.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/brass_wire.json
+       54  1980-01-01 00:00   assets/ironworks/models/item/bronze_alloy_smelter.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/bronze_block.json
+       47  1980-01-01 00:00   assets/ironworks/models/item/bronze_boiler.json
+       51  1980-01-01 00:00   assets/ironworks/models/item/bronze_compressor.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/bronze_dust.json
+       50  1980-01-01 00:00   assets/ironworks/models/item/bronze_extractor.json
+       53  1980-01-01 00:00   assets/ironworks/models/item/bronze_forge_hammer.json
+       48  1980-01-01 00:00   assets/ironworks/models/item/bronze_furnace.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/bronze_gear.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/bronze_hammer.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/bronze_ingot.json
+       50  1980-01-01 00:00   assets/ironworks/models/item/bronze_macerator.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/bronze_nugget.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/bronze_plate.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/bronze_ring.json
+       53  1980-01-01 00:00   assets/ironworks/models/item/bronze_rock_breaker.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/bronze_rod.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/bronze_screw.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/bronze_wire.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/charcoal_dust.json
+       49  1980-01-01 00:00   assets/ironworks/models/item/coal_coke_block.json
+      109  1980-01-01 00:00   assets/ironworks/models/item/coal_coke_dust.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/coal_coke_gem.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/coal_dust.json
+       43  1980-01-01 00:00   assets/ironworks/models/item/coke_oven.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/copper_block.json
+      109  1980-01-01 00:00   assets/ironworks/models/item/copper_crushed.json
+      115  1980-01-01 00:00   assets/ironworks/models/item/copper_deepslate_ore.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/copper_dust.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/copper_gear.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/copper_hammer.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/copper_ingot.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/copper_nugget.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/copper_ore.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/copper_plate.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/copper_raw.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/copper_rod.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/copper_wire.json
+       52  1980-01-01 00:00   assets/ironworks/models/item/deepslate_lead_ore.json
+       54  1980-01-01 00:00   assets/ironworks/models/item/deepslate_nickel_ore.json
+       54  1980-01-01 00:00   assets/ironworks/models/item/deepslate_silver_ore.json
+       51  1980-01-01 00:00   assets/ironworks/models/item/deepslate_tin_ore.json
+       52  1980-01-01 00:00   assets/ironworks/models/item/deepslate_zinc_ore.json
+      113  1980-01-01 00:00   assets/ironworks/models/item/engineering_wrench.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/gold_crushed.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/gold_dust.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/gold_gear.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/gold_plate.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/gold_rod.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/gold_wire.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/iron_bolt.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/iron_crushed.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/iron_dust.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/iron_gear.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/iron_hammer.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/iron_plate.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/iron_ring.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/iron_rod.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/iron_screw.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/iron_wire.json
+       53  1980-01-01 00:00   assets/ironworks/models/item/large_bronze_boiler.json
+       52  1980-01-01 00:00   assets/ironworks/models/item/large_steel_boiler.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/lead_block.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/lead_crushed.json
+      113  1980-01-01 00:00   assets/ironworks/models/item/lead_deepslate_ore.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/lead_dust.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/lead_gear.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/lead_ingot.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/lead_nugget.json
+       42  1980-01-01 00:00   assets/ironworks/models/item/lead_ore.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/lead_plate.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/lead_raw.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/lead_rod.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/lead_wire.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/nickel_block.json
+      109  1980-01-01 00:00   assets/ironworks/models/item/nickel_crushed.json
+      115  1980-01-01 00:00   assets/ironworks/models/item/nickel_deepslate_ore.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/nickel_dust.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/nickel_gear.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/nickel_ingot.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/nickel_nugget.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/nickel_ore.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/nickel_plate.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/nickel_raw.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/nickel_rod.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/nickel_wire.json
+       57  1980-01-01 00:00   assets/ironworks/models/item/primitive_blast_furnace.json
+      110  1980-01-01 00:00   assets/ironworks/models/item/raw_rubber_pulp.json
+      101  1980-01-01 00:00   assets/ironworks/models/item/rubber.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/silver_block.json
+      109  1980-01-01 00:00   assets/ironworks/models/item/silver_crushed.json
+      115  1980-01-01 00:00   assets/ironworks/models/item/silver_deepslate_ore.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/silver_dust.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/silver_gear.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/silver_ingot.json
+      108  1980-01-01 00:00   assets/ironworks/models/item/silver_nugget.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/silver_ore.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/silver_plate.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/silver_raw.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/silver_rod.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/silver_wire.json
+       53  1980-01-01 00:00   assets/ironworks/models/item/steel_alloy_smelter.json
+       45  1980-01-01 00:00   assets/ironworks/models/item/steel_block.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/steel_boiler.json
+       50  1980-01-01 00:00   assets/ironworks/models/item/steel_compressor.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/steel_dust.json
+       49  1980-01-01 00:00   assets/ironworks/models/item/steel_extractor.json
+       52  1980-01-01 00:00   assets/ironworks/models/item/steel_forge_hammer.json
+       47  1980-01-01 00:00   assets/ironworks/models/item/steel_furnace.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/steel_gear.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/steel_hammer.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/steel_ingot.json
+       49  1980-01-01 00:00   assets/ironworks/models/item/steel_macerator.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/steel_nugget.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/steel_plate.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/steel_ring.json
+       52  1980-01-01 00:00   assets/ironworks/models/item/steel_rock_breaker.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/steel_rod.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/steel_screw.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/steel_wire.json
+       43  1980-01-01 00:00   assets/ironworks/models/item/tin_block.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/tin_crushed.json
+      112  1980-01-01 00:00   assets/ironworks/models/item/tin_deepslate_ore.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/tin_dust.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/tin_gear.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/tin_ingot.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/tin_nugget.json
+       41  1980-01-01 00:00   assets/ironworks/models/item/tin_ore.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/tin_plate.json
+      102  1980-01-01 00:00   assets/ironworks/models/item/tin_raw.json
+      102  1980-01-01 00:00   assets/ironworks/models/item/tin_rod.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/tin_wire.json
+       46  1980-01-01 00:00   assets/ironworks/models/item/treated_wood.json
+       44  1980-01-01 00:00   assets/ironworks/models/item/zinc_block.json
+      107  1980-01-01 00:00   assets/ironworks/models/item/zinc_crushed.json
+      113  1980-01-01 00:00   assets/ironworks/models/item/zinc_deepslate_ore.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/zinc_dust.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/zinc_gear.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/zinc_ingot.json
+      106  1980-01-01 00:00   assets/ironworks/models/item/zinc_nugget.json
+       42  1980-01-01 00:00   assets/ironworks/models/item/zinc_ore.json
+      105  1980-01-01 00:00   assets/ironworks/models/item/zinc_plate.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/zinc_raw.json
+      103  1980-01-01 00:00   assets/ironworks/models/item/zinc_rod.json
+      104  1980-01-01 00:00   assets/ironworks/models/item/zinc_wire.json
+        0  1980-01-01 00:00   assets/ironworks/textures/
+        0  1980-01-01 00:00   assets/ironworks/textures/block/
+      439  1980-01-01 00:00   assets/ironworks/textures/block/brass_block.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front.png
+      520  1980-01-01 00:00   assets/ironworks/textures/block/bronze_alloy_smelter_front_on.png
+      441  1980-01-01 00:00   assets/ironworks/textures/block/bronze_block.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front.png
+      516  1980-01-01 00:00   assets/ironworks/textures/block/bronze_compressor_front_on.png
+      546  1980-01-01 00:00   assets/ironworks/textures/block/bronze_extractor_front.png
+      513  1980-01-01 00:00   assets/ironworks/textures/block/bronze_extractor_front_on.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_forge_hammer_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front.png
+      506  1980-01-01 00:00   assets/ironworks/textures/block/bronze_furnace_front_on.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_liquid_boiler_front.png
+      519  1980-01-01 00:00   assets/ironworks/textures/block/bronze_liquid_boiler_front_on.png
+      546  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front.png
+      525  1980-01-01 00:00   assets/ironworks/textures/block/bronze_macerator_front_on.png
+      436  1980-01-01 00:00   assets/ironworks/textures/block/bronze_machine_side.png
+      433  1980-01-01 00:00   assets/ironworks/textures/block/bronze_machine_top.png
+      550  1980-01-01 00:00   assets/ironworks/textures/block/bronze_pipe.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front.png
+      513  1980-01-01 00:00   assets/ironworks/textures/block/bronze_rock_breaker_front_on.png
+      541  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solar_boiler_front.png
+      509  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solar_boiler_front_on.png
+      528  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/bronze_solid_boiler_front_on.png
+      442  1980-01-01 00:00   assets/ironworks/textures/block/coal_coke_block.png
+      546  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front.png
+      530  1980-01-01 00:00   assets/ironworks/textures/block/coke_oven_front_on.png
+      424  1980-01-01 00:00   assets/ironworks/textures/block/copper_block.png
+      801  1980-01-01 00:00   assets/ironworks/textures/block/copper_ore.png
+      791  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_copper_ore.png
+      806  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_lead_ore.png
+      803  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_nickel_ore.png
+      807  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_silver_ore.png
+      815  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_tin_ore.png
+      818  1980-01-01 00:00   assets/ironworks/textures/block/deepslate_zinc_ore.png
+      445  1980-01-01 00:00   assets/ironworks/textures/block/firebrick.png
+      439  1980-01-01 00:00   assets/ironworks/textures/block/lead_block.png
+      761  1980-01-01 00:00   assets/ironworks/textures/block/lead_ore.png
+      439  1980-01-01 00:00   assets/ironworks/textures/block/nickel_block.png
+      796  1980-01-01 00:00   assets/ironworks/textures/block/nickel_ore.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front.png
+      529  1980-01-01 00:00   assets/ironworks/textures/block/primitive_blast_furnace_front_on.png
+      543  1980-01-01 00:00   assets/ironworks/textures/block/reinforced_bronze_pipe.png
+      433  1980-01-01 00:00   assets/ironworks/textures/block/silver_block.png
+      808  1980-01-01 00:00   assets/ironworks/textures/block/silver_ore.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/small_bronze_pipe.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front.png
+      517  1980-01-01 00:00   assets/ironworks/textures/block/steel_alloy_smelter_front_on.png
+      444  1980-01-01 00:00   assets/ironworks/textures/block/steel_block.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front.png
+      526  1980-01-01 00:00   assets/ironworks/textures/block/steel_compressor_front_on.png
+      535  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front.png
+      527  1980-01-01 00:00   assets/ironworks/textures/block/steel_extractor_front_on.png
+      536  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front.png
+      524  1980-01-01 00:00   assets/ironworks/textures/block/steel_forge_hammer_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front.png
+      529  1980-01-01 00:00   assets/ironworks/textures/block/steel_furnace_front_on.png
+      534  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front.png
+      523  1980-01-01 00:00   assets/ironworks/textures/block/steel_liquid_boiler_front_on.png
+      544  1980-01-01 00:00   assets/ironworks/textures/block/steel_macerator_front.png
+      528  1980-01-01 00:00   assets/ironworks/textures/block/steel_macerator_front_on.png
+      430  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_side.png
+      429  1980-01-01 00:00   assets/ironworks/textures/block/steel_machine_top.png
+      548  1980-01-01 00:00   assets/ironworks/textures/block/steel_pipe.png
+      545  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front.png
+      532  1980-01-01 00:00   assets/ironworks/textures/block/steel_rock_breaker_front_on.png
+      538  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front.png
+      509  1980-01-01 00:00   assets/ironworks/textures/block/steel_solar_boiler_front_on.png
+      524  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front.png
+      522  1980-01-01 00:00   assets/ironworks/textures/block/steel_solid_boiler_front_on.png
+      438  1980-01-01 00:00   assets/ironworks/textures/block/tin_block.png
+      810  1980-01-01 00:00   assets/ironworks/textures/block/tin_ore.png
+      437  1980-01-01 00:00   assets/ironworks/textures/block/zinc_block.png
+      818  1980-01-01 00:00   assets/ironworks/textures/block/zinc_ore.png
+        0  1980-01-01 00:00   assets/ironworks/textures/gui/
+      945  1980-01-01 00:00   assets/ironworks/textures/gui/machine.png
+        0  1980-01-01 00:00   assets/ironworks/textures/item/
+      526  1980-01-01 00:00   assets/ironworks/textures/item/basic_electrical_circuit.png
+      240  1980-01-01 00:00   assets/ironworks/textures/item/brass_dust.png
+      196  1980-01-01 00:00   assets/ironworks/textures/item/brass_gear.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/brass_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/brass_nugget.png
+      135  1980-01-01 00:00   assets/ironworks/textures/item/brass_plate.png
+      150  1980-01-01 00:00   assets/ironworks/textures/item/brass_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/brass_wire.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/bronze_dust.png
+      191  1980-01-01 00:00   assets/ironworks/textures/item/bronze_gear.png
+      118  1980-01-01 00:00   assets/ironworks/textures/item/bronze_hammer.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/bronze_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/bronze_nugget.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/bronze_plate.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/bronze_ring.png
+      148  1980-01-01 00:00   assets/ironworks/textures/item/bronze_rod.png
+      110  1980-01-01 00:00   assets/ironworks/textures/item/bronze_screw.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/bronze_wire.png
+      224  1980-01-01 00:00   assets/ironworks/textures/item/charcoal_dust.png
+      207  1980-01-01 00:00   assets/ironworks/textures/item/coal_coke_dust.png
+       94  1980-01-01 00:00   assets/ironworks/textures/item/coal_coke_gem.png
+      211  1980-01-01 00:00   assets/ironworks/textures/item/coal_dust.png
+      182  1980-01-01 00:00   assets/ironworks/textures/item/copper_crushed.png
+      221  1980-01-01 00:00   assets/ironworks/textures/item/copper_dust.png
+      190  1980-01-01 00:00   assets/ironworks/textures/item/copper_gear.png
+      117  1980-01-01 00:00   assets/ironworks/textures/item/copper_hammer.png
+      129  1980-01-01 00:00   assets/ironworks/textures/item/copper_ingot.png
+      105  1980-01-01 00:00   assets/ironworks/textures/item/copper_nugget.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/copper_plate.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/copper_raw.png
+      148  1980-01-01 00:00   assets/ironworks/textures/item/copper_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/copper_wire.png
+      545  1980-01-01 00:00   assets/ironworks/textures/item/engineering_wrench.png
+      167  1980-01-01 00:00   assets/ironworks/textures/item/gold_crushed.png
+      208  1980-01-01 00:00   assets/ironworks/textures/item/gold_dust.png
+      168  1980-01-01 00:00   assets/ironworks/textures/item/gold_gear.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/gold_plate.png
+      146  1980-01-01 00:00   assets/ironworks/textures/item/gold_rod.png
+      118  1980-01-01 00:00   assets/ironworks/textures/item/gold_wire.png
+       94  1980-01-01 00:00   assets/ironworks/textures/item/iron_bolt.png
+      199  1980-01-01 00:00   assets/ironworks/textures/item/iron_crushed.png
+      217  1980-01-01 00:00   assets/ironworks/textures/item/iron_dust.png
+      182  1980-01-01 00:00   assets/ironworks/textures/item/iron_gear.png
+      118  1980-01-01 00:00   assets/ironworks/textures/item/iron_hammer.png
+      137  1980-01-01 00:00   assets/ironworks/textures/item/iron_plate.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/iron_ring.png
+      144  1980-01-01 00:00   assets/ironworks/textures/item/iron_rod.png
+      110  1980-01-01 00:00   assets/ironworks/textures/item/iron_screw.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/iron_wire.png
+      177  1980-01-01 00:00   assets/ironworks/textures/item/lead_crushed.png
+      212  1980-01-01 00:00   assets/ironworks/textures/item/lead_dust.png
+      191  1980-01-01 00:00   assets/ironworks/textures/item/lead_gear.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/lead_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/lead_nugget.png
+      135  1980-01-01 00:00   assets/ironworks/textures/item/lead_plate.png
+      272  1980-01-01 00:00   assets/ironworks/textures/item/lead_raw.png
+      147  1980-01-01 00:00   assets/ironworks/textures/item/lead_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/lead_wire.png
+      180  1980-01-01 00:00   assets/ironworks/textures/item/nickel_crushed.png
+      226  1980-01-01 00:00   assets/ironworks/textures/item/nickel_dust.png
+      188  1980-01-01 00:00   assets/ironworks/textures/item/nickel_gear.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/nickel_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/nickel_nugget.png
+      137  1980-01-01 00:00   assets/ironworks/textures/item/nickel_plate.png
+      265  1980-01-01 00:00   assets/ironworks/textures/item/nickel_raw.png
+      147  1980-01-01 00:00   assets/ironworks/textures/item/nickel_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/nickel_wire.png
+      536  1980-01-01 00:00   assets/ironworks/textures/item/raw_rubber_pulp.png
+      521  1980-01-01 00:00   assets/ironworks/textures/item/rubber.png
+      170  1980-01-01 00:00   assets/ironworks/textures/item/silver_crushed.png
+      231  1980-01-01 00:00   assets/ironworks/textures/item/silver_dust.png
+      189  1980-01-01 00:00   assets/ironworks/textures/item/silver_gear.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/silver_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/silver_nugget.png
+      135  1980-01-01 00:00   assets/ironworks/textures/item/silver_plate.png
+      238  1980-01-01 00:00   assets/ironworks/textures/item/silver_raw.png
+      150  1980-01-01 00:00   assets/ironworks/textures/item/silver_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/silver_wire.png
+      223  1980-01-01 00:00   assets/ironworks/textures/item/steel_dust.png
+      184  1980-01-01 00:00   assets/ironworks/textures/item/steel_gear.png
+      118  1980-01-01 00:00   assets/ironworks/textures/item/steel_hammer.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/steel_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/steel_nugget.png
+      133  1980-01-01 00:00   assets/ironworks/textures/item/steel_plate.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/steel_ring.png
+      147  1980-01-01 00:00   assets/ironworks/textures/item/steel_rod.png
+      110  1980-01-01 00:00   assets/ironworks/textures/item/steel_screw.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/steel_wire.png
+      194  1980-01-01 00:00   assets/ironworks/textures/item/tin_crushed.png
+      212  1980-01-01 00:00   assets/ironworks/textures/item/tin_dust.png
+      188  1980-01-01 00:00   assets/ironworks/textures/item/tin_gear.png
+      130  1980-01-01 00:00   assets/ironworks/textures/item/tin_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/tin_nugget.png
+      137  1980-01-01 00:00   assets/ironworks/textures/item/tin_plate.png
+      280  1980-01-01 00:00   assets/ironworks/textures/item/tin_raw.png
+      148  1980-01-01 00:00   assets/ironworks/textures/item/tin_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/tin_wire.png
+      179  1980-01-01 00:00   assets/ironworks/textures/item/zinc_crushed.png
+      210  1980-01-01 00:00   assets/ironworks/textures/item/zinc_dust.png
+      188  1980-01-01 00:00   assets/ironworks/textures/item/zinc_gear.png
+      131  1980-01-01 00:00   assets/ironworks/textures/item/zinc_ingot.png
+      106  1980-01-01 00:00   assets/ironworks/textures/item/zinc_nugget.png
+      134  1980-01-01 00:00   assets/ironworks/textures/item/zinc_plate.png
+      262  1980-01-01 00:00   assets/ironworks/textures/item/zinc_raw.png
+      148  1980-01-01 00:00   assets/ironworks/textures/item/zinc_rod.png
+      119  1980-01-01 00:00   assets/ironworks/textures/item/zinc_wire.png
+        0  1980-01-01 00:00   assets/modid/
+      453  1980-01-01 00:00   assets/modid/icon.png
+        0  1980-01-01 00:00   com/
+        0  1980-01-01 00:00   com/benluvzbacon/
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/
+     1502  1980-01-01 00:00   com/benluvzbacon/ironworks/Ironworks.class
+     1922  1980-01-01 00:00   com/benluvzbacon/ironworks/IronworksClient.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/block/
+     1689  1980-01-01 00:00   com/benluvzbacon/ironworks/block/BoilerBlock.class
+     4876  1980-01-01 00:00   com/benluvzbacon/ironworks/block/MachineBlock.class
+      865  1980-01-01 00:00   com/benluvzbacon/ironworks/block/PipeBlock.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/block/entity/
+     1065  1980-01-01 00:00   com/benluvzbacon/ironworks/block/entity/BoilerBlockEntity.class
+     3970  1980-01-01 00:00   com/benluvzbacon/ironworks/block/entity/MachineBlockEntity.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/
+     1937  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreen.class
+     2031  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreenHandler.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/
+     1378  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/IronworksJeiPlugin.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/
+     3325  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModBlockEntities.class
+     5431  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModBlocks.class
+      382  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModCommands.class
+     2646  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModExtraBlocks.class
+     2071  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModExtraItems.class
+      376  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModFluids.class
+     8368  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItemGroups.class
+    12848  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModItems.class
+     2063  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModScreenHandlers.class
+     1538  1980-01-01 00:00   com/benluvzbacon/ironworks/registry/ModWorldGen.class
+        0  1980-01-01 00:00   com/benluvzbacon/ironworks/steam/
+      298  1980-01-01 00:00   com/benluvzbacon/ironworks/steam/ISteamNode.class
+        0  1980-01-01 00:00   data/
+        0  1980-01-01 00:00   data/ironworks/
+        0  1980-01-01 00:00   data/ironworks/loot_tables/
+      309  1980-01-01 00:00   data/ironworks/loot_tables/brass_block.json
+      318  1980-01-01 00:00   data/ironworks/loot_tables/bronze_alloy_smelter.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/bronze_block.json
+      311  1980-01-01 00:00   data/ironworks/loot_tables/bronze_boiler.json
+      315  1980-01-01 00:00   data/ironworks/loot_tables/bronze_compressor.json
+      314  1980-01-01 00:00   data/ironworks/loot_tables/bronze_extractor.json
+      317  1980-01-01 00:00   data/ironworks/loot_tables/bronze_forge_hammer.json
+      312  1980-01-01 00:00   data/ironworks/loot_tables/bronze_furnace.json
+      314  1980-01-01 00:00   data/ironworks/loot_tables/bronze_macerator.json
+      317  1980-01-01 00:00   data/ironworks/loot_tables/bronze_rock_breaker.json
+      313  1980-01-01 00:00   data/ironworks/loot_tables/coal_coke_block.json
+      307  1980-01-01 00:00   data/ironworks/loot_tables/coke_oven.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/copper_block.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/copper_ore.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_copper_ore.json
+      306  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_lead_ore.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_nickel_ore.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_silver_ore.json
+      305  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_tin_ore.json
+      306  1980-01-01 00:00   data/ironworks/loot_tables/deepslate_zinc_ore.json
+      317  1980-01-01 00:00   data/ironworks/loot_tables/large_bronze_boiler.json
+      316  1980-01-01 00:00   data/ironworks/loot_tables/large_steel_boiler.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/lead_block.json
+      306  1980-01-01 00:00   data/ironworks/loot_tables/lead_ore.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/nickel_block.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/nickel_ore.json
+      321  1980-01-01 00:00   data/ironworks/loot_tables/primitive_blast_furnace.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/silver_block.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/silver_ore.json
+      317  1980-01-01 00:00   data/ironworks/loot_tables/steel_alloy_smelter.json
+      309  1980-01-01 00:00   data/ironworks/loot_tables/steel_block.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/steel_boiler.json
+      314  1980-01-01 00:00   data/ironworks/loot_tables/steel_compressor.json
+      313  1980-01-01 00:00   data/ironworks/loot_tables/steel_extractor.json
+      316  1980-01-01 00:00   data/ironworks/loot_tables/steel_forge_hammer.json
+      311  1980-01-01 00:00   data/ironworks/loot_tables/steel_furnace.json
+      313  1980-01-01 00:00   data/ironworks/loot_tables/steel_macerator.json
+      316  1980-01-01 00:00   data/ironworks/loot_tables/steel_rock_breaker.json
+      307  1980-01-01 00:00   data/ironworks/loot_tables/tin_block.json
+      305  1980-01-01 00:00   data/ironworks/loot_tables/tin_ore.json
+      310  1980-01-01 00:00   data/ironworks/loot_tables/treated_wood.json
+      308  1980-01-01 00:00   data/ironworks/loot_tables/zinc_block.json
+      306  1980-01-01 00:00   data/ironworks/loot_tables/zinc_ore.json
+        0  1980-01-01 00:00   data/ironworks/recipes/
+      283  1980-01-01 00:00   data/ironworks/recipes/basic_electrical_circuit.json
+      217  1980-01-01 00:00   data/ironworks/recipes/brass_block.json
+      188  1980-01-01 00:00   data/ironworks/recipes/brass_dust_blasting.json
+      188  1980-01-01 00:00   data/ironworks/recipes/brass_dust_smelting.json
+      270  1980-01-01 00:00   data/ironworks/recipes/brass_gear.json
+      187  1980-01-01 00:00   data/ironworks/recipes/brass_ingot_from_block.json
+      218  1980-01-01 00:00   data/ironworks/recipes/brass_ingot_from_nuggets.json
+      188  1980-01-01 00:00   data/ironworks/recipes/brass_nugget.json
+      222  1980-01-01 00:00   data/ironworks/recipes/brass_plate.json
+      216  1980-01-01 00:00   data/ironworks/recipes/brass_rod.json
+      282  1980-01-01 00:00   data/ironworks/recipes/bronze_alloy_smelter.json
+      219  1980-01-01 00:00   data/ironworks/recipes/bronze_block.json
+      275  1980-01-01 00:00   data/ironworks/recipes/bronze_compressor.json
+      190  1980-01-01 00:00   data/ironworks/recipes/bronze_dust_blasting.json
+      337  1980-01-01 00:00   data/ironworks/recipes/bronze_dust_mix.json
+      190  1980-01-01 00:00   data/ironworks/recipes/bronze_dust_smelting.json
+      278  1980-01-01 00:00   data/ironworks/recipes/bronze_extractor.json
+      281  1980-01-01 00:00   data/ironworks/recipes/bronze_forge_hammer.json
+      273  1980-01-01 00:00   data/ironworks/recipes/bronze_furnace.json
+      273  1980-01-01 00:00   data/ironworks/recipes/bronze_gear.json
+      270  1980-01-01 00:00   data/ironworks/recipes/bronze_hammer.json
+      189  1980-01-01 00:00   data/ironworks/recipes/bronze_ingot_from_block.json
+      220  1980-01-01 00:00   data/ironworks/recipes/bronze_ingot_from_nuggets.json
+      278  1980-01-01 00:00   data/ironworks/recipes/bronze_macerator.json
+      190  1980-01-01 00:00   data/ironworks/recipes/bronze_nugget.json
+      224  1980-01-01 00:00   data/ironworks/recipes/bronze_plate.json
+      216  1980-01-01 00:00   data/ironworks/recipes/bronze_ring.json
+      281  1980-01-01 00:00   data/ironworks/recipes/bronze_rock_breaker.json
+      218  1980-01-01 00:00   data/ironworks/recipes/bronze_rod.json
+      210  1980-01-01 00:00   data/ironworks/recipes/coke_oven.json
+      219  1980-01-01 00:00   data/ironworks/recipes/copper_block.json
+      193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_blasting.json
+      193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_smelting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_blasting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_smelting.json
+      273  1980-01-01 00:00   data/ironworks/recipes/copper_gear.json
+      270  1980-01-01 00:00   data/ironworks/recipes/copper_hammer.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_from_block.json
+      220  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_from_nuggets.json
+      190  1980-01-01 00:00   data/ironworks/recipes/copper_nugget.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ore_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_ore_smelting.json
+      224  1980-01-01 00:00   data/ironworks/recipes/copper_plate.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_raw_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/copper_raw_smelting.json
+      218  1980-01-01 00:00   data/ironworks/recipes/copper_rod.json
+      277  1980-01-01 00:00   data/ironworks/recipes/engineering_wrench.json
+      189  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_smelting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/gold_dust_blasting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/gold_dust_smelting.json
+      267  1980-01-01 00:00   data/ironworks/recipes/gold_gear.json
+      220  1980-01-01 00:00   data/ironworks/recipes/gold_plate.json
+      214  1980-01-01 00:00   data/ironworks/recipes/gold_rod.json
+      189  1980-01-01 00:00   data/ironworks/recipes/iron_crushed_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/iron_crushed_smelting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/iron_dust_blasting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/iron_dust_smelting.json
+      267  1980-01-01 00:00   data/ironworks/recipes/iron_gear.json
+      220  1980-01-01 00:00   data/ironworks/recipes/iron_plate.json
+      212  1980-01-01 00:00   data/ironworks/recipes/iron_ring.json
+      214  1980-01-01 00:00   data/ironworks/recipes/iron_rod.json
+      215  1980-01-01 00:00   data/ironworks/recipes/lead_block.json
+      189  1980-01-01 00:00   data/ironworks/recipes/lead_crushed_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/lead_crushed_smelting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/lead_dust_blasting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/lead_dust_smelting.json
+      267  1980-01-01 00:00   data/ironworks/recipes/lead_gear.json
+      185  1980-01-01 00:00   data/ironworks/recipes/lead_ingot_from_block.json
+      216  1980-01-01 00:00   data/ironworks/recipes/lead_ingot_from_nuggets.json
+      186  1980-01-01 00:00   data/ironworks/recipes/lead_nugget.json
+      185  1980-01-01 00:00   data/ironworks/recipes/lead_ore_blasting.json
+      185  1980-01-01 00:00   data/ironworks/recipes/lead_ore_smelting.json
+      220  1980-01-01 00:00   data/ironworks/recipes/lead_plate.json
+      185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_blasting.json
+      185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_smelting.json
+      214  1980-01-01 00:00   data/ironworks/recipes/lead_rod.json
+      219  1980-01-01 00:00   data/ironworks/recipes/nickel_block.json
+      193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_blasting.json
+      193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_smelting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/nickel_dust_blasting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/nickel_dust_smelting.json
+      273  1980-01-01 00:00   data/ironworks/recipes/nickel_gear.json
+      189  1980-01-01 00:00   data/ironworks/recipes/nickel_ingot_from_block.json
+      220  1980-01-01 00:00   data/ironworks/recipes/nickel_ingot_from_nuggets.json
+      190  1980-01-01 00:00   data/ironworks/recipes/nickel_nugget.json
+      189  1980-01-01 00:00   data/ironworks/recipes/nickel_ore_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/nickel_ore_smelting.json
+      224  1980-01-01 00:00   data/ironworks/recipes/nickel_plate.json
+      189  1980-01-01 00:00   data/ironworks/recipes/nickel_raw_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/nickel_raw_smelting.json
+      218  1980-01-01 00:00   data/ironworks/recipes/nickel_rod.json
+      188  1980-01-01 00:00   data/ironworks/recipes/rubber.json
+      219  1980-01-01 00:00   data/ironworks/recipes/silver_block.json
+      193  1980-01-01 00:00   data/ironworks/recipes/silver_crushed_blasting.json
+      193  1980-01-01 00:00   data/ironworks/recipes/silver_crushed_smelting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/silver_dust_blasting.json
+      190  1980-01-01 00:00   data/ironworks/recipes/silver_dust_smelting.json
+      273  1980-01-01 00:00   data/ironworks/recipes/silver_gear.json
+      189  1980-01-01 00:00   data/ironworks/recipes/silver_ingot_from_block.json
+      220  1980-01-01 00:00   data/ironworks/recipes/silver_ingot_from_nuggets.json
+      190  1980-01-01 00:00   data/ironworks/recipes/silver_nugget.json
+      189  1980-01-01 00:00   data/ironworks/recipes/silver_ore_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/silver_ore_smelting.json
+      224  1980-01-01 00:00   data/ironworks/recipes/silver_plate.json
+      189  1980-01-01 00:00   data/ironworks/recipes/silver_raw_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/silver_raw_smelting.json
+      218  1980-01-01 00:00   data/ironworks/recipes/silver_rod.json
+      280  1980-01-01 00:00   data/ironworks/recipes/steel_alloy_smelter.json
+      217  1980-01-01 00:00   data/ironworks/recipes/steel_block.json
+      273  1980-01-01 00:00   data/ironworks/recipes/steel_compressor.json
+      188  1980-01-01 00:00   data/ironworks/recipes/steel_dust_blasting.json
+      188  1980-01-01 00:00   data/ironworks/recipes/steel_dust_smelting.json
+      276  1980-01-01 00:00   data/ironworks/recipes/steel_extractor.json
+      279  1980-01-01 00:00   data/ironworks/recipes/steel_forge_hammer.json
+      271  1980-01-01 00:00   data/ironworks/recipes/steel_furnace.json
+      270  1980-01-01 00:00   data/ironworks/recipes/steel_gear.json
+      268  1980-01-01 00:00   data/ironworks/recipes/steel_hammer.json
+      187  1980-01-01 00:00   data/ironworks/recipes/steel_ingot_from_block.json
+      218  1980-01-01 00:00   data/ironworks/recipes/steel_ingot_from_nuggets.json
+      276  1980-01-01 00:00   data/ironworks/recipes/steel_macerator.json
+      188  1980-01-01 00:00   data/ironworks/recipes/steel_nugget.json
+      222  1980-01-01 00:00   data/ironworks/recipes/steel_plate.json
+      214  1980-01-01 00:00   data/ironworks/recipes/steel_ring.json
+      279  1980-01-01 00:00   data/ironworks/recipes/steel_rock_breaker.json
+      216  1980-01-01 00:00   data/ironworks/recipes/steel_rod.json
+      213  1980-01-01 00:00   data/ironworks/recipes/tin_block.json
+      187  1980-01-01 00:00   data/ironworks/recipes/tin_crushed_blasting.json
+      187  1980-01-01 00:00   data/ironworks/recipes/tin_crushed_smelting.json
+      184  1980-01-01 00:00   data/ironworks/recipes/tin_dust_blasting.json
+      184  1980-01-01 00:00   data/ironworks/recipes/tin_dust_smelting.json
+      264  1980-01-01 00:00   data/ironworks/recipes/tin_gear.json
+      183  1980-01-01 00:00   data/ironworks/recipes/tin_ingot_from_block.json
+      214  1980-01-01 00:00   data/ironworks/recipes/tin_ingot_from_nuggets.json
+      184  1980-01-01 00:00   data/ironworks/recipes/tin_nugget.json
+      183  1980-01-01 00:00   data/ironworks/recipes/tin_ore_blasting.json
+      183  1980-01-01 00:00   data/ironworks/recipes/tin_ore_smelting.json
+      218  1980-01-01 00:00   data/ironworks/recipes/tin_plate.json
+      183  1980-01-01 00:00   data/ironworks/recipes/tin_raw_blasting.json
+      183  1980-01-01 00:00   data/ironworks/recipes/tin_raw_smelting.json
+      212  1980-01-01 00:00   data/ironworks/recipes/tin_rod.json
+      215  1980-01-01 00:00   data/ironworks/recipes/zinc_block.json
+      189  1980-01-01 00:00   data/ironworks/recipes/zinc_crushed_blasting.json
+      189  1980-01-01 00:00   data/ironworks/recipes/zinc_crushed_smelting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/zinc_dust_blasting.json
+      186  1980-01-01 00:00   data/ironworks/recipes/zinc_dust_smelting.json
+      267  1980-01-01 00:00   data/ironworks/recipes/zinc_gear.json
+      185  1980-01-01 00:00   data/ironworks/recipes/zinc_ingot_from_block.json
+      216  1980-01-01 00:00   data/ironworks/recipes/zinc_ingot_from_nuggets.json
+      186  1980-01-01 00:00   data/ironworks/recipes/zinc_nugget.json
+      185  1980-01-01 00:00   data/ironworks/recipes/zinc_ore_blasting.json
+      185  1980-01-01 00:00   data/ironworks/recipes/zinc_ore_smelting.json
+      220  1980-01-01 00:00   data/ironworks/recipes/zinc_plate.json
+      185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_blasting.json
+      185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_smelting.json
+      214  1980-01-01 00:00   data/ironworks/recipes/zinc_rod.json
+        0  1980-01-01 00:00   data/ironworks/worldgen/
+        0  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/
+      580  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/lead_ore.json
+      584  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/nickel_ore.json
+      584  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/silver_ore.json
+      578  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/tin_ore.json
+      580  1980-01-01 00:00   data/ironworks/worldgen/configured_feature/zinc_ore.json
+        0  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/
+      460  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/lead_ore.json
+      462  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/nickel_ore.json
+      462  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/silver_ore.json
+      459  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/tin_ore.json
+      460  1980-01-01 00:00   data/ironworks/worldgen/placed_feature/zinc_ore.json
+        0  1980-01-01 00:00   data/minecraft/
+        0  1980-01-01 00:00   data/minecraft/tags/
+        0  1980-01-01 00:00   data/minecraft/tags/block/
+        0  1980-01-01 00:00   data/minecraft/tags/block/mineable/
+     1435  1980-01-01 00:00   data/minecraft/tags/block/mineable/pickaxe.json
+      226  1980-01-01 00:00   data/minecraft/tags/block/needs_iron_tool.json
+     1249  1980-01-01 00:00   data/minecraft/tags/block/needs_stone_tool.json
+      841  1980-01-01 00:00   fabric.mod.json
+      214  1980-01-01 00:00   ironworks.mixins.json
+      214  1980-01-01 00:00   modid.mixins.json
+---------                     -------
+   227737                     707 files

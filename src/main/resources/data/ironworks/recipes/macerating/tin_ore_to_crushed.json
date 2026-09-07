@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:tin_ore"
+  },
+  "result": {
+    "id": "ironworks:tin_crushed",
+    "count": 2
+  }
+}

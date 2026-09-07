@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "ironworks:tin_ingot"
+    }
+  },
+  "result": {
+    "id": "ironworks:tin_rod",
+    "count": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:zinc_ingot"
+    },
+    {
+      "item": "ironworks:iron_hammer"
+    }
+  ],
+  "result": {
+    "id": "ironworks:zinc_plate"
+  }
+}

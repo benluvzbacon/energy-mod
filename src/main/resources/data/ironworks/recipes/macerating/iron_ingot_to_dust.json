@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "ironworks:iron_dust",
+    "count": 1
+  }
+}

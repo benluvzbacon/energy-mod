@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:silver_ore"
+  },
+  "result": {
+    "id": "ironworks:silver_crushed",
+    "count": 2
+  }
+}

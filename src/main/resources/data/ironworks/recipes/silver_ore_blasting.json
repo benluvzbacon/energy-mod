@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ironworks:silver_ore"
+  },
+  "result": {
+    "id": "ironworks:silver_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

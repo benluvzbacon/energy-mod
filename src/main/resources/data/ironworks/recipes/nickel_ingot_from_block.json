@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:nickel_block"
+    }
+  ],
+  "result": {
+    "id": "ironworks:nickel_ingot",
+    "count": 9
+  }
+}

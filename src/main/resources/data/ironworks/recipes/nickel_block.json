@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "ironworks:nickel_ingot"
+    }
+  },
+  "result": {
+    "id": "ironworks:nickel_block"
+  }
+}

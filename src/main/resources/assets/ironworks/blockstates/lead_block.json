@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ironworks:block/lead_block"
+    }
+  }
+}

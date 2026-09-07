@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:silver_ingot"
+  },
+  "result": {
+    "id": "ironworks:silver_dust",
+    "count": 1
+  }
+}

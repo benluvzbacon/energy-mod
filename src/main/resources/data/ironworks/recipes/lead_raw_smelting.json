@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ironworks:lead_raw"
+  },
+  "result": {
+    "id": "ironworks:lead_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

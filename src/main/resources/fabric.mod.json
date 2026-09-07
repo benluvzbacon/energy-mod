@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "ironworks",
+  "version": "${version}",
+  "name": "Ironworks: Steam Engineering",
+  "description": "Complete Steam Age Tech Mod",
+  "authors": [
+    "benluvzbacon"
+  ],
+  "contact": {
+    "homepage": "https://github.com/benluvzbacon/energy-mod",
+    "sources": "https://github.com/benluvzbacon/energy-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/ironworks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.benluvzbacon.ironworks.Ironworks"
+    ],
+    "client": [
+      "com.benluvzbacon.ironworks.IronworksClient"
+    ],
+    "jei_mod_plugin": [
+      "com.benluvzbacon.ironworks.jei.IronworksJeiPlugin"
+    ]
+  },
+  "mixins": [
+    "ironworks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "minecraft:copper_ore"
+  },
+  "result": {
+    "id": "ironworks:copper_crushed",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ironworks:steel_plate"
+    },
+    "M": {
+      "item": "minecraft:piston"
+    }
+  },
+  "result": {
+    "id": "ironworks:steel_compressor"
+  }
+}

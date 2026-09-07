@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:copper_crushed"
+  },
+  "result": {
+    "id": "ironworks:copper_dust",
+    "count": 1
+  }
+}

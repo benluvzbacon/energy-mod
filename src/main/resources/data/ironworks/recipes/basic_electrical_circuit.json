@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R R",
+    "CCC",
+    "R R"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "ironworks:copper_wire"
+    }
+  },
+  "result": {
+    "id": "ironworks:basic_electrical_circuit"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RPR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "ironworks:silver_rod"
+    },
+    "P": {
+      "item": "ironworks:silver_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:silver_gear"
+  }
+}

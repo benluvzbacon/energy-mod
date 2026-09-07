@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RPR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "ironworks:bronze_rod"
+    },
+    "P": {
+      "item": "ironworks:bronze_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:bronze_gear"
+  }
+}

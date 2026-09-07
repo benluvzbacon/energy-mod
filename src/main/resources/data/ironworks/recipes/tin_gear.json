@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RPR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "ironworks:tin_rod"
+    },
+    "P": {
+      "item": "ironworks:tin_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:tin_gear"
+  }
+}

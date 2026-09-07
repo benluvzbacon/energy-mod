@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:silver_ingot"
+    },
+    {
+      "item": "ironworks:iron_hammer"
+    }
+  ],
+  "result": {
+    "id": "ironworks:silver_plate"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "ironworks:lead_ore",
+    "ironworks:deepslate_lead_ore",
+    "ironworks:lead_block",
+    "ironworks:silver_ore",
+    "ironworks:deepslate_silver_ore",
+    "ironworks:silver_block"
+  ]
+}

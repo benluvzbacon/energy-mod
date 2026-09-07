@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:nickel_ore"
+  },
+  "result": {
+    "id": "ironworks:nickel_crushed",
+    "count": 2
+  }
+}

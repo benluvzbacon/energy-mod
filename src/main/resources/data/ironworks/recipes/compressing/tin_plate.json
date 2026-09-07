@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:compressing",
+  "ingredient": {
+    "item": "ironworks:tin_ingot"
+  },
+  "result": {
+    "id": "ironworks:tin_plate",
+    "count": 1
+  }
+}

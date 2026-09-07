@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ironworks:bronze_plate"
+    },
+    "M": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "id": "ironworks:bronze_forge_hammer"
+  }
+}

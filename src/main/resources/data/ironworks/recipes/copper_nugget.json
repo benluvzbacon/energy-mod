@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ironworks:copper_ingot"
+    }
+  ],
+  "result": {
+    "id": "ironworks:copper_nugget",
+    "count": 9
+  }
+}

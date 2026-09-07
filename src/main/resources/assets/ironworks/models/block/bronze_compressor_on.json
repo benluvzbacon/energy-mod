@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "ironworks:block/bronze_machine_top",
+    "front": "ironworks:block/bronze_compressor_front_on",
+    "side": "ironworks:block/bronze_machine_side"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:tin_ingot"
+  },
+  "result": {
+    "id": "ironworks:tin_dust",
+    "count": 1
+  }
+}

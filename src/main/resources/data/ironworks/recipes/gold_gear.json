@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RPR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "ironworks:gold_rod"
+    },
+    "P": {
+      "item": "ironworks:gold_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:gold_gear"
+  }
+}

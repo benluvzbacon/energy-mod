@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ironworks:bronze_dust"
+  },
+  "result": {
+    "id": "ironworks:bronze_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

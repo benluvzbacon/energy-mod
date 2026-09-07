@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:macerating",
+  "ingredient": {
+    "item": "ironworks:zinc_ore"
+  },
+  "result": {
+    "id": "ironworks:zinc_crushed",
+    "count": 2
+  }
+}

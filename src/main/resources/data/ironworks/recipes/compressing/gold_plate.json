@@ -1,0 +1,10 @@
+{
+  "type": "ironworks:compressing",
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "ironworks:gold_plate",
+    "count": 1
+  }
+}

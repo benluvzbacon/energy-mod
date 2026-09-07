@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ironworks:block/tin_block"
+    }
+  }
+}

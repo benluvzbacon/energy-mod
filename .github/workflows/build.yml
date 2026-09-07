@@ -1,0 +1,37 @@
+name: Build Mod
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: |
+          ./gradlew build > build_log.txt 2>&1 || true
+          echo "LIBS DIRECTORY:" >> build_log.txt
+          ls -lh build/libs/ >> build_log.txt || true
+          echo "JAR CONTENTS:" >> build_log.txt
+          for file in build/libs/*.jar; do echo "Contents of $file:"; unzip -l "$file" >> build_log.txt || true; done
+      - name: Commit build log
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add build_log.txt
+          git commit -m "Update build log" || true
+          git push origin HEAD:${{ github.ref_name }} || true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ironworks-steam-age
+          path: build/libs/*.jar

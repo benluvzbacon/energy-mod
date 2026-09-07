@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ironworks:raw_rubber_pulp"
+  },
+  "result": {
+    "id": "ironworks:rubber"
+  },
+  "experience": 0.5,
+  "cookingtime": 200
+}

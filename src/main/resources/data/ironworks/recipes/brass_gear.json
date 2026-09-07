@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RPR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "ironworks:brass_rod"
+    },
+    "P": {
+      "item": "ironworks:brass_plate"
+    }
+  },
+  "result": {
+    "id": "ironworks:brass_gear"
+  }
+}
