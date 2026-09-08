@@ -225,11 +225,11 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :assemble
 > Task :build
 
-BUILD SUCCESSFUL in 1m 15s
+BUILD SUCCESSFUL in 1m 3s
 5 actionable tasks: 5 executed
 LIBS DIRECTORY:
-total 304K
--rw-r--r-- 1 runner runner 304K Sep  7 23:52 ironworks-steam-age-1.0.0.jar
+total 320K
+-rw-r--r-- 1 runner runner 318K Sep  8 00:10 ironworks-steam-age-1.0.0.jar
 JAR CONTENTS:
 Archive:  build/libs/ironworks-steam-age-1.0.0.jar
   Length      Date    Time    Name
@@ -689,7 +689,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
      1937  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreen.class
      2031  1980-01-01 00:00   com/benluvzbacon/ironworks/gui/SteamMachineScreenHandler.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/
-     5640  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/IronworksJeiPlugin.class
+     5443  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/IronworksJeiPlugin.class
      4382  1980-01-01 00:00   com/benluvzbacon/ironworks/jei/MachineRecipeCategory.class
         0  1980-01-01 00:00   com/benluvzbacon/ironworks/recipe/
      3073  1980-01-01 00:00   com/benluvzbacon/ironworks/recipe/MachineRecipe.class
@@ -807,6 +807,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       270  1980-01-01 00:00   data/ironworks/recipes/brass_gear.json
       187  1980-01-01 00:00   data/ironworks/recipes/brass_ingot_from_block.json
       234  1980-01-01 00:00   data/ironworks/recipes/brass_ingot_from_nuggets.json
+      237  1980-01-01 00:00   data/ironworks/recipes/brass_ingot_to_dust_manual.json
       188  1980-01-01 00:00   data/ironworks/recipes/brass_nugget.json
       222  1980-01-01 00:00   data/ironworks/recipes/brass_plate.json
       216  1980-01-01 00:00   data/ironworks/recipes/brass_rod.json
@@ -824,6 +825,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       270  1980-01-01 00:00   data/ironworks/recipes/bronze_hammer.json
       189  1980-01-01 00:00   data/ironworks/recipes/bronze_ingot_from_block.json
       236  1980-01-01 00:00   data/ironworks/recipes/bronze_ingot_from_nuggets.json
+      239  1980-01-01 00:00   data/ironworks/recipes/bronze_ingot_to_dust_manual.json
       336  1980-01-01 00:00   data/ironworks/recipes/bronze_liquid_boiler.json
       278  1980-01-01 00:00   data/ironworks/recipes/bronze_macerator.json
       190  1980-01-01 00:00   data/ironworks/recipes/bronze_nugget.json
@@ -836,6 +838,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       335  1980-01-01 00:00   data/ironworks/recipes/bronze_solar_boiler.json
       335  1980-01-01 00:00   data/ironworks/recipes/bronze_solid_boiler.json
       221  1980-01-01 00:00   data/ironworks/recipes/bronze_wire.json
+      243  1980-01-01 00:00   data/ironworks/recipes/charcoal_ingot_to_dust_manual.json
       210  1980-01-01 00:00   data/ironworks/recipes/coke_oven.json
         0  1980-01-01 00:00   data/ironworks/recipes/compressing/
       165  1980-01-01 00:00   data/ironworks/recipes/compressing/brass_plate.json
@@ -851,33 +854,53 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       163  1980-01-01 00:00   data/ironworks/recipes/compressing/zinc_plate.json
       193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_blasting.json
       193  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_smelting.json
+      241  1980-01-01 00:00   data/ironworks/recipes/copper_crushed_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_blasting.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_dust_smelting.json
       273  1980-01-01 00:00   data/ironworks/recipes/copper_gear.json
       270  1980-01-01 00:00   data/ironworks/recipes/copper_hammer.json
       236  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_from_nuggets.json
+      239  1980-01-01 00:00   data/ironworks/recipes/copper_ingot_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/copper_nugget.json
+      240  1980-01-01 00:00   data/ironworks/recipes/copper_ore_to_crushed_manual.json
       224  1980-01-01 00:00   data/ironworks/recipes/copper_plate.json
+      240  1980-01-01 00:00   data/ironworks/recipes/copper_raw_to_crushed_manual.json
       218  1980-01-01 00:00   data/ironworks/recipes/copper_rod.json
       221  1980-01-01 00:00   data/ironworks/recipes/copper_wire.json
+      250  1980-01-01 00:00   data/ironworks/recipes/deepslate_copper_ore_to_crushed_manual.json
+      246  1980-01-01 00:00   data/ironworks/recipes/deepslate_gold_ore_to_crushed_manual.json
+      246  1980-01-01 00:00   data/ironworks/recipes/deepslate_iron_ore_to_crushed_manual.json
+      246  1980-01-01 00:00   data/ironworks/recipes/deepslate_lead_ore_to_crushed_manual.json
+      250  1980-01-01 00:00   data/ironworks/recipes/deepslate_nickel_ore_to_crushed_manual.json
+      250  1980-01-01 00:00   data/ironworks/recipes/deepslate_silver_ore_to_crushed_manual.json
+      244  1980-01-01 00:00   data/ironworks/recipes/deepslate_tin_ore_to_crushed_manual.json
+      246  1980-01-01 00:00   data/ironworks/recipes/deepslate_zinc_ore_to_crushed_manual.json
       277  1980-01-01 00:00   data/ironworks/recipes/engineering_wrench.json
       225  1980-01-01 00:00   data/ironworks/recipes/firebrick.json
       189  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_smelting.json
+      237  1980-01-01 00:00   data/ironworks/recipes/gold_crushed_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/gold_dust_blasting.json
       186  1980-01-01 00:00   data/ironworks/recipes/gold_dust_smelting.json
       267  1980-01-01 00:00   data/ironworks/recipes/gold_gear.json
+      235  1980-01-01 00:00   data/ironworks/recipes/gold_ingot_to_dust_manual.json
+      236  1980-01-01 00:00   data/ironworks/recipes/gold_ore_to_crushed_manual.json
       220  1980-01-01 00:00   data/ironworks/recipes/gold_plate.json
+      236  1980-01-01 00:00   data/ironworks/recipes/gold_raw_to_crushed_manual.json
       214  1980-01-01 00:00   data/ironworks/recipes/gold_rod.json
       217  1980-01-01 00:00   data/ironworks/recipes/gold_wire.json
       182  1980-01-01 00:00   data/ironworks/recipes/iron_bolt.json
       189  1980-01-01 00:00   data/ironworks/recipes/iron_crushed_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/iron_crushed_smelting.json
+      237  1980-01-01 00:00   data/ironworks/recipes/iron_crushed_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/iron_dust_blasting.json
       186  1980-01-01 00:00   data/ironworks/recipes/iron_dust_smelting.json
       267  1980-01-01 00:00   data/ironworks/recipes/iron_gear.json
       266  1980-01-01 00:00   data/ironworks/recipes/iron_hammer.json
+      235  1980-01-01 00:00   data/ironworks/recipes/iron_ingot_to_dust_manual.json
+      236  1980-01-01 00:00   data/ironworks/recipes/iron_ore_to_crushed_manual.json
       220  1980-01-01 00:00   data/ironworks/recipes/iron_plate.json
+      236  1980-01-01 00:00   data/ironworks/recipes/iron_raw_to_crushed_manual.json
       212  1980-01-01 00:00   data/ironworks/recipes/iron_ring.json
       214  1980-01-01 00:00   data/ironworks/recipes/iron_rod.json
       184  1980-01-01 00:00   data/ironworks/recipes/iron_screw.json
@@ -885,17 +908,21 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       215  1980-01-01 00:00   data/ironworks/recipes/lead_block.json
       189  1980-01-01 00:00   data/ironworks/recipes/lead_crushed_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/lead_crushed_smelting.json
+      237  1980-01-01 00:00   data/ironworks/recipes/lead_crushed_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/lead_dust_blasting.json
       186  1980-01-01 00:00   data/ironworks/recipes/lead_dust_smelting.json
       267  1980-01-01 00:00   data/ironworks/recipes/lead_gear.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_ingot_from_block.json
       232  1980-01-01 00:00   data/ironworks/recipes/lead_ingot_from_nuggets.json
+      235  1980-01-01 00:00   data/ironworks/recipes/lead_ingot_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/lead_nugget.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_ore_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_ore_smelting.json
+      236  1980-01-01 00:00   data/ironworks/recipes/lead_ore_to_crushed_manual.json
       220  1980-01-01 00:00   data/ironworks/recipes/lead_plate.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/lead_raw_smelting.json
+      236  1980-01-01 00:00   data/ironworks/recipes/lead_raw_to_crushed_manual.json
       214  1980-01-01 00:00   data/ironworks/recipes/lead_rod.json
       217  1980-01-01 00:00   data/ironworks/recipes/lead_wire.json
         0  1980-01-01 00:00   data/ironworks/recipes/macerating/
@@ -926,17 +953,21 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       219  1980-01-01 00:00   data/ironworks/recipes/nickel_block.json
       193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_blasting.json
       193  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_smelting.json
+      241  1980-01-01 00:00   data/ironworks/recipes/nickel_crushed_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/nickel_dust_blasting.json
       190  1980-01-01 00:00   data/ironworks/recipes/nickel_dust_smelting.json
       273  1980-01-01 00:00   data/ironworks/recipes/nickel_gear.json
       189  1980-01-01 00:00   data/ironworks/recipes/nickel_ingot_from_block.json
       236  1980-01-01 00:00   data/ironworks/recipes/nickel_ingot_from_nuggets.json
+      239  1980-01-01 00:00   data/ironworks/recipes/nickel_ingot_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/nickel_nugget.json
       189  1980-01-01 00:00   data/ironworks/recipes/nickel_ore_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/nickel_ore_smelting.json
+      240  1980-01-01 00:00   data/ironworks/recipes/nickel_ore_to_crushed_manual.json
       224  1980-01-01 00:00   data/ironworks/recipes/nickel_plate.json
       189  1980-01-01 00:00   data/ironworks/recipes/nickel_raw_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/nickel_raw_smelting.json
+      240  1980-01-01 00:00   data/ironworks/recipes/nickel_raw_to_crushed_manual.json
       218  1980-01-01 00:00   data/ironworks/recipes/nickel_rod.json
       221  1980-01-01 00:00   data/ironworks/recipes/nickel_wire.json
       227  1980-01-01 00:00   data/ironworks/recipes/primitive_blast_furnace.json
@@ -946,17 +977,21 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       219  1980-01-01 00:00   data/ironworks/recipes/silver_block.json
       193  1980-01-01 00:00   data/ironworks/recipes/silver_crushed_blasting.json
       193  1980-01-01 00:00   data/ironworks/recipes/silver_crushed_smelting.json
+      241  1980-01-01 00:00   data/ironworks/recipes/silver_crushed_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/silver_dust_blasting.json
       190  1980-01-01 00:00   data/ironworks/recipes/silver_dust_smelting.json
       273  1980-01-01 00:00   data/ironworks/recipes/silver_gear.json
       189  1980-01-01 00:00   data/ironworks/recipes/silver_ingot_from_block.json
       236  1980-01-01 00:00   data/ironworks/recipes/silver_ingot_from_nuggets.json
+      239  1980-01-01 00:00   data/ironworks/recipes/silver_ingot_to_dust_manual.json
       190  1980-01-01 00:00   data/ironworks/recipes/silver_nugget.json
       189  1980-01-01 00:00   data/ironworks/recipes/silver_ore_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/silver_ore_smelting.json
+      240  1980-01-01 00:00   data/ironworks/recipes/silver_ore_to_crushed_manual.json
       224  1980-01-01 00:00   data/ironworks/recipes/silver_plate.json
       189  1980-01-01 00:00   data/ironworks/recipes/silver_raw_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/silver_raw_smelting.json
+      240  1980-01-01 00:00   data/ironworks/recipes/silver_raw_to_crushed_manual.json
       218  1980-01-01 00:00   data/ironworks/recipes/silver_rod.json
       221  1980-01-01 00:00   data/ironworks/recipes/silver_wire.json
       240  1980-01-01 00:00   data/ironworks/recipes/small_bronze_pipe.json
@@ -972,6 +1007,7 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       268  1980-01-01 00:00   data/ironworks/recipes/steel_hammer.json
       187  1980-01-01 00:00   data/ironworks/recipes/steel_ingot_from_block.json
       234  1980-01-01 00:00   data/ironworks/recipes/steel_ingot_from_nuggets.json
+      237  1980-01-01 00:00   data/ironworks/recipes/steel_ingot_to_dust_manual.json
       334  1980-01-01 00:00   data/ironworks/recipes/steel_liquid_boiler.json
       276  1980-01-01 00:00   data/ironworks/recipes/steel_macerator.json
       188  1980-01-01 00:00   data/ironworks/recipes/steel_nugget.json
@@ -987,34 +1023,42 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       213  1980-01-01 00:00   data/ironworks/recipes/tin_block.json
       187  1980-01-01 00:00   data/ironworks/recipes/tin_crushed_blasting.json
       187  1980-01-01 00:00   data/ironworks/recipes/tin_crushed_smelting.json
+      235  1980-01-01 00:00   data/ironworks/recipes/tin_crushed_to_dust_manual.json
       184  1980-01-01 00:00   data/ironworks/recipes/tin_dust_blasting.json
       184  1980-01-01 00:00   data/ironworks/recipes/tin_dust_smelting.json
       264  1980-01-01 00:00   data/ironworks/recipes/tin_gear.json
       183  1980-01-01 00:00   data/ironworks/recipes/tin_ingot_from_block.json
       230  1980-01-01 00:00   data/ironworks/recipes/tin_ingot_from_nuggets.json
+      233  1980-01-01 00:00   data/ironworks/recipes/tin_ingot_to_dust_manual.json
       184  1980-01-01 00:00   data/ironworks/recipes/tin_nugget.json
       183  1980-01-01 00:00   data/ironworks/recipes/tin_ore_blasting.json
       183  1980-01-01 00:00   data/ironworks/recipes/tin_ore_smelting.json
+      234  1980-01-01 00:00   data/ironworks/recipes/tin_ore_to_crushed_manual.json
       218  1980-01-01 00:00   data/ironworks/recipes/tin_plate.json
       183  1980-01-01 00:00   data/ironworks/recipes/tin_raw_blasting.json
       183  1980-01-01 00:00   data/ironworks/recipes/tin_raw_smelting.json
+      234  1980-01-01 00:00   data/ironworks/recipes/tin_raw_to_crushed_manual.json
       212  1980-01-01 00:00   data/ironworks/recipes/tin_rod.json
       215  1980-01-01 00:00   data/ironworks/recipes/tin_wire.json
       231  1980-01-01 00:00   data/ironworks/recipes/treated_wood.json
       215  1980-01-01 00:00   data/ironworks/recipes/zinc_block.json
       189  1980-01-01 00:00   data/ironworks/recipes/zinc_crushed_blasting.json
       189  1980-01-01 00:00   data/ironworks/recipes/zinc_crushed_smelting.json
+      237  1980-01-01 00:00   data/ironworks/recipes/zinc_crushed_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/zinc_dust_blasting.json
       186  1980-01-01 00:00   data/ironworks/recipes/zinc_dust_smelting.json
       267  1980-01-01 00:00   data/ironworks/recipes/zinc_gear.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_ingot_from_block.json
       232  1980-01-01 00:00   data/ironworks/recipes/zinc_ingot_from_nuggets.json
+      235  1980-01-01 00:00   data/ironworks/recipes/zinc_ingot_to_dust_manual.json
       186  1980-01-01 00:00   data/ironworks/recipes/zinc_nugget.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_ore_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_ore_smelting.json
+      236  1980-01-01 00:00   data/ironworks/recipes/zinc_ore_to_crushed_manual.json
       220  1980-01-01 00:00   data/ironworks/recipes/zinc_plate.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_blasting.json
       185  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_smelting.json
+      236  1980-01-01 00:00   data/ironworks/recipes/zinc_raw_to_crushed_manual.json
       214  1980-01-01 00:00   data/ironworks/recipes/zinc_rod.json
       217  1980-01-01 00:00   data/ironworks/recipes/zinc_wire.json
         0  1980-01-01 00:00   data/ironworks/tags/
@@ -1046,4 +1090,4 @@ Archive:  build/libs/ironworks-steam-age-1.0.0.jar
       214  1980-01-01 00:00   ironworks.mixins.json
       214  1980-01-01 00:00   modid.mixins.json
 ---------                     -------
-   272624                     811 files
+   282953                     855 files
