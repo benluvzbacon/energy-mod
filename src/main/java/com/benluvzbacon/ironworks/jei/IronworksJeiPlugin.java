@@ -11,13 +11,12 @@ import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
 
 @JeiPlugin
 public class IronworksJeiPlugin implements IModPlugin {
@@ -42,17 +41,31 @@ public class IronworksJeiPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        RecipeManager rm = MinecraftClient.getInstance().world.getRecipeManager();
+        // JEI 1.20+ provides getIngredientManager() and possibly getVanillaRecipeManager() or getRecipeManager()
+        // Wait, let's just use MinecraftClient.getInstance().world.getRecipeManager() but carefully.
+        RecipeManager rm;
+        try {
+            rm = net.minecraft.client.MinecraftClient.getInstance().world.getRecipeManager();
+        } catch (Exception e) {
+            // Fallback for title screen etc
+            return;
+        }
         
-        registration.addRecipes(MACERATING, getRecipes(rm, ModRecipes.MACERATOR_TYPE));
-        registration.addRecipes(COMPRESSING, getRecipes(rm, ModRecipes.COMPRESSOR_TYPE));
-        registration.addRecipes(EXTRACTING, getRecipes(rm, ModRecipes.EXTRACTOR_TYPE));
+        if (rm != null) {
+            registration.addRecipes(MACERATING, getRecipes(rm, ModRecipes.MACERATOR_TYPE));
+            registration.addRecipes(COMPRESSING, getRecipes(rm, ModRecipes.COMPRESSOR_TYPE));
+            registration.addRecipes(EXTRACTING, getRecipes(rm, ModRecipes.EXTRACTOR_TYPE));
+        }
     }
 
     private List<MachineRecipe> getRecipes(RecipeManager rm, net.minecraft.recipe.RecipeType<MachineRecipe> type) {
-        return rm.listAllOfType(type).stream()
-            .map(RecipeEntry::value)
-            .collect(Collectors.toList());
+        List<MachineRecipe> list = new ArrayList<>();
+        for (RecipeEntry<?> entry : rm.values()) {
+            if (entry.value().getType() == type && entry.value() instanceof MachineRecipe) {
+                list.add((MachineRecipe) entry.value());
+            }
+        }
+        return list;
     }
 
     @Override
